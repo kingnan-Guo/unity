@@ -1,0 +1,25 @@
+
+build/*
+
+# Editor directories and files
+.idea
+.vscode
+# *.suo
+# *.ntvs*
+# *.njsproj
+# *.sln
+
+
+# Unity3D
+*.local
+*.DS_Store
+*.pidb
+*.suo
+*.userprefs
+*.pidb.bak
+*.tmp_proj
+*.tmp_sln
+*.tmp_vcxproj
+*.tmp_vcxproj.filters
+*.tmp_sln.filters
+Library/
