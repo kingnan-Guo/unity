@@ -69,6 +69,7 @@
     <Compile Include="Assets/script/DebugTest.cs" />
     <Compile Include="Assets/script/TimeTest.cs" />
     <Compile Include="Assets/script/SceneTest.cs" />
+    <Compile Include="Assets/script/AsyncSceneTest.cs" />
     <Compile Include="Assets/script/ApplicationTest.cs" />
     <Compile Include="Assets/script/EmptyTest.cs" />
   </ItemGroup>
