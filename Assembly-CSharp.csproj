@@ -65,11 +65,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets/script/NewBehaviourScript.cs" />
+    <Compile Include="Assets/script/AxisTest.cs" />
     <Compile Include="Assets/script/RotateTest.cs" />
     <Compile Include="Assets/script/DebugTest.cs" />
     <Compile Include="Assets/script/TimeTest.cs" />
+    <Compile Include="Assets/script/transformTest.cs" />
     <Compile Include="Assets/script/SceneTest.cs" />
+    <Compile Include="Assets/script/key.cs" />
     <Compile Include="Assets/script/AsyncSceneTest.cs" />
+    <Compile Include="Assets/script/TouchTest.cs" />
     <Compile Include="Assets/script/ApplicationTest.cs" />
     <Compile Include="Assets/script/EmptyTest.cs" />
   </ItemGroup>
