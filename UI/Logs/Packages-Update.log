@@ -1,8 +1,8 @@
 
-=== Tue May 28 23:13:32 2024
+=== Tue May 28 23:17:01 2024
 
 Packages were changed.
-Update Mode: mergeDefaultDependencies
+Update Mode: resetToDefaultDependencies
 
 The following packages were 已添加:
   com.unity.modules.ai@1.0.0
@@ -36,7 +36,3 @@ The following packages were 已添加:
   com.unity.modules.vr@1.0.0
   com.unity.modules.wind@1.0.0
   com.unity.modules.xr@1.0.0
-The following packages were 已更新:
-  com.unity.collab-proxy 从版本 1.13.5 到 2.3.1
-  com.unity.timeline 从版本 1.6.2 到 1.7.6
-  com.unity.visualscripting 从版本 1.7.6 到 1.9.4
