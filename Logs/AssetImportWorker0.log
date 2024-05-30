@@ -1224,3 +1224,11 @@ Received Import Request.
 Start importing Assets/scripts/listTest.cs using Guid(2e220d315e7f4466cbe3fb6be2afe7be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '327295b1f5c913df6da91b987c2feac8') in 0.002163 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 227.107132 seconds.
+  path: Assets/scripts/listTest.cs
+  artifactKey: Guid(2e220d315e7f4466cbe3fb6be2afe7be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/scripts/listTest.cs using Guid(2e220d315e7f4466cbe3fb6be2afe7be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bfdff687583f6b9fdda39ccbe0c3a31') in 0.000719 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
