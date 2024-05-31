@@ -67,10 +67,13 @@
     <Compile Include="Assets/scripts/MathfTest.cs" />
     <Compile Include="Assets/scripts/genericity.cs" />
     <Compile Include="Assets/scripts/listTest.cs" />
+    <Compile Include="Assets/scrpitsPage/scriptOne/testFunction.cs" />
     <Compile Include="Assets/scripts/outTest.cs" />
+    <Compile Include="Assets/scrpitsPage/scriptTwo/timeTest.cs" />
     <Compile Include="Assets/scripts/classTest.cs" />
     <Compile Include="Assets/scripts/GetAndSet.cs" />
     <Compile Include="Assets/scripts/EventDelegation.cs" />
+    <Compile Include="Assets/scrpitsPage/scriptOne/game.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
