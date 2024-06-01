@@ -76,8 +76,11 @@
     <Compile Include="Assets/scrpitsPage/invoke/incoke.cs" />
     <Compile Include="Assets/scrpitsPage/scriptTwo/timeTest.cs" />
     <Compile Include="Assets/scripts/classTest.cs" />
+    <Compile Include="Assets/scrpitsPage/UGUITest/UGUITest.cs" />
+    <Compile Include="Assets/scrpitsPage/colliderTest/colliderTest.cs" />
     <Compile Include="Assets/scrpitsPage/abstractAndInterface/InterfaceTest.cs" />
     <Compile Include="Assets/scripts/GetAndSet.cs" />
+    <Compile Include="Assets/scrpitsPage/colliderTest/ballTest.cs" />
     <Compile Include="Assets/scrpitsPage/abstractAndInterface/abstractTest.cs" />
     <Compile Include="Assets/scrpitsPage/createNode/cube.cs" />
     <Compile Include="Assets/scripts/EventDelegation.cs" />
