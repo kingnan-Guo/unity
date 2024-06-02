@@ -64,16 +64,23 @@
     <Analyzer Include="/Applications/Unity/Hub/Editor/2022.3.30f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets/scrpitsPage/事件注册/UI_UI监听事件管理器_类.cs" />
     <Compile Include="Assets/scrpitsPage/changeScene/createNewSceneTest.cs" />
+    <Compile Include="Assets/scrpitsPage/PlayerPrefs/PlayerPrefsTest.cs" />
+    <Compile Include="Assets/scrpitsPage/事件注册/功能_注册监听事件_类.cs" />
     <Compile Include="Assets/scripts/MathfTest.cs" />
     <Compile Include="Assets/scrpitsPage/changeScene/changeSceneTest.cs" />
+    <Compile Include="Assets/scrpitsPage/多线程/Multithreading.cs" />
+    <Compile Include="Assets/scrpitsPage/coroutineTest/coroutineTest.cs" />
     <Compile Include="Assets/scripts/genericity.cs" />
     <Compile Include="Assets/scrpitsPage/Prefab/PrefabTest.cs" />
+    <Compile Include="Assets/scrpitsPage/画布场景/canvasTest.cs" />
     <Compile Include="Assets/scripts/listTest.cs" />
     <Compile Include="Assets/scrpitsPage/createNode/createNodeTest.cs" />
     <Compile Include="Assets/scrpitsPage/scriptOne/testFunction.cs" />
     <Compile Include="Assets/scripts/outTest.cs" />
     <Compile Include="Assets/scrpitsPage/invoke/incoke.cs" />
+    <Compile Include="Assets/scrpitsPage/raycastHitTest/raycastHitTest.cs" />
     <Compile Include="Assets/scrpitsPage/scriptTwo/timeTest.cs" />
     <Compile Include="Assets/scripts/classTest.cs" />
     <Compile Include="Assets/scrpitsPage/UGUITest/UGUITest.cs" />
