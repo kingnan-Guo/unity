@@ -69,8 +69,8 @@
     <Compile Include="Assets/scrpitsPage/PlayerPrefs/PlayerPrefsTest.cs" />
     <Compile Include="Assets/scrpitsPage/事件注册/功能_注册监听事件_类.cs" />
     <Compile Include="Assets/scripts/MathfTest.cs" />
-    <Compile Include="Assets/scrpitsPage/changeScene/changeSceneTest.cs" />
     <Compile Include="Assets/scrpitsPage/多线程/Multithreading.cs" />
+    <Compile Include="Assets/scrpitsPage/changeScene/changeSceneTest.cs" />
     <Compile Include="Assets/scrpitsPage/coroutineTest/coroutineTest.cs" />
     <Compile Include="Assets/scripts/genericity.cs" />
     <Compile Include="Assets/scrpitsPage/Prefab/PrefabTest.cs" />
@@ -90,8 +90,10 @@
     <Compile Include="Assets/scrpitsPage/colliderTest/ballTest.cs" />
     <Compile Include="Assets/scrpitsPage/abstractAndInterface/abstractTest.cs" />
     <Compile Include="Assets/scrpitsPage/createNode/cube.cs" />
+    <Compile Include="Assets/scrpitsPage/www测试/wwwTest.cs" />
     <Compile Include="Assets/scripts/EventDelegation.cs" />
     <Compile Include="Assets/scrpitsPage/scriptOne/game.cs" />
+    <Compile Include="Assets/scrpitsPage/多线程/ThreadTest_work.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
