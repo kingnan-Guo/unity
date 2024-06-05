@@ -73,6 +73,7 @@
     <Compile Include="Assets/scrpitsPage/changeScene/changeSceneTest.cs" />
     <Compile Include="Assets/scrpitsPage/coroutineTest/coroutineTest.cs" />
     <Compile Include="Assets/scripts/genericity.cs" />
+    <Compile Include="Assets/scrpitsPage/添加带有自定义属性的模型/addCustomCube.cs" />
     <Compile Include="Assets/scrpitsPage/Prefab/PrefabTest.cs" />
     <Compile Include="Assets/scrpitsPage/画布场景/canvasTest.cs" />
     <Compile Include="Assets/scripts/listTest.cs" />
@@ -80,7 +81,9 @@
     <Compile Include="Assets/scrpitsPage/scriptOne/testFunction.cs" />
     <Compile Include="Assets/scripts/outTest.cs" />
     <Compile Include="Assets/scrpitsPage/invoke/incoke.cs" />
+    <Compile Include="Assets/scrpitsPage/资源加载/addResources.cs" />
     <Compile Include="Assets/scrpitsPage/raycastHitTest/raycastHitTest.cs" />
+    <Compile Include="Assets/scrpitsPage/异步加载场景/async_load_scene.cs" />
     <Compile Include="Assets/scrpitsPage/scriptTwo/timeTest.cs" />
     <Compile Include="Assets/scripts/classTest.cs" />
     <Compile Include="Assets/scrpitsPage/UGUITest/UGUITest.cs" />
@@ -89,11 +92,15 @@
     <Compile Include="Assets/scripts/GetAndSet.cs" />
     <Compile Include="Assets/scrpitsPage/colliderTest/ballTest.cs" />
     <Compile Include="Assets/scrpitsPage/abstractAndInterface/abstractTest.cs" />
+    <Compile Include="Assets/scrpitsPage/资源加载/NewBehaviourScript.cs" />
     <Compile Include="Assets/scrpitsPage/createNode/cube.cs" />
     <Compile Include="Assets/scrpitsPage/www测试/wwwTest.cs" />
     <Compile Include="Assets/scripts/EventDelegation.cs" />
     <Compile Include="Assets/scrpitsPage/scriptOne/game.cs" />
     <Compile Include="Assets/scrpitsPage/多线程/ThreadTest_work.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets/resources/txt/test.txt" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -998,6 +1005,10 @@
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.AssetBundleBrowser.Editor">
+      <HintPath>Library/ScriptAssemblies/Unity.AssetBundleBrowser.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.VisualScripting.Flow">

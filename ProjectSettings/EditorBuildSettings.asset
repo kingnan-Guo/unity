@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/myNewScene.unity
     guid: b342b300b51544baeb04c74b766b6de5
   - enabled: 1
-    path: Assets/Scenes/New Scene.unity
+    path: "Assets/Scenes/\u7528\u4E8E\u52A0\u8F7D\u8D44\u6E90\u7684\u573A\u666F.unity"
     guid: d37e433c1d18648c99f4e29bdf238998
+  - enabled: 1
+    path: Assets/Scenes/my_aysnc_scene.unity
+    guid: 64fe13ab9b9694b1ca4f322ab0305437
   m_configObjects: {}
