@@ -51,10 +51,10 @@ public class cameraPosition : MonoBehaviour
             moveDir = new Vector3(moveDir.x, 0, moveDir.z);
 
             // 设置摄像机的旋转
-            // if (Input.GetKey(KeyCode.Mouse2)) {
-            //     // Debug.Log(transform.forward);
-            //     Debug.Log("moveDir ==" + moveDir);
-            // }
+            if (Input.GetKey(KeyCode.Mouse2)) {
+                // Debug.Log(transform.forward);
+                Debug.Log("moveDir ==" + moveDir);
+            }
             float moveSpeed = 20f;
             transform.position += moveDir * moveSpeed * Time.deltaTime;
             Rotion_Transform += moveDir * moveSpeed * Time.deltaTime;
@@ -85,5 +85,6 @@ public class cameraPosition : MonoBehaviour
             transform.RotateAround(Rotion_Transform, transform.right, mouse_y * 20);
         }
     }
+
 
 }

@@ -69,9 +69,10 @@ public class initProject : MonoBehaviour
         // cube.transform.position = new Vector3(0, 0, 0);
         cube.transform.localScale = new Vector3(1, 1, 1);
         // cube.name = "cube";
-        cube.AddComponent<BoxCollider>();
+        // cube.AddComponent<BoxCollider>();
         cube.GetComponent<MeshRenderer>().material.color = Color.red;
-
+        // Rigidbody rigidbody = cube.AddComponent<Rigidbody>();
+        // rigidbody.mass = 0; // 设置质量为1kg
         return cube;
     }
 }

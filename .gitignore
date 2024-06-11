@@ -2,3 +2,8 @@
 /Library
 /Temp
 /logs
+/Logs
+/buildPackage
+
+*.log
+*.log

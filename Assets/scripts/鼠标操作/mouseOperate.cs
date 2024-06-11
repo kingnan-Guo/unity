@@ -11,6 +11,8 @@ public class mouseOperate : MonoBehaviour
     private Vector3 targetPosition;
     private bool isMoving = false;
 
+    private Vector3 cameraTargetPosition;
+
     // private GameObject clickObject;
     // Start is called before the first frame update
     void Start()
@@ -44,17 +46,17 @@ public class mouseOperate : MonoBehaviour
                 // Transform cam = this.transform.parent.Find("Main Camera").transform;
                 // Debug.Log("cam ="+  this.transform.parent);
                 targetPosition = hit.point;
+                cameraTargetPosition = targetPosition - camera.transform.forward;
                 isMoving = true;
             }
         }
 
         if(isMoving){
             // print("isMoving");
-            Debug.Log("camera.transform.forward ="+ camera.transform.forward);
-            Vector3 targetP = targetPosition - camera.transform.forward;
-            camera.transform.position = Vector3.Lerp(camera.transform.position,  targetP, Time.deltaTime * smoothSpeed);
+            // Debug.Log("camera.transform.forward ="+ camera.transform.forward);
+            camera.transform.position = Vector3.Lerp(camera.transform.position,  cameraTargetPosition, Time.deltaTime * smoothSpeed);
             camera.transform.LookAt(targetPosition);
-            if(camera.transform.position == targetP){
+            if(camera.transform.position == cameraTargetPosition){
                 isMoving = false;
             }
         }
@@ -94,6 +96,10 @@ public class mouseOperate : MonoBehaviour
             isMoving = false;
         }
         if (Input.GetAxis("Mouse ScrollWheel") < 0)
+        {
+            isMoving = false;
+        }
+        if (Input.GetKey(KeyCode.Mouse1))
         {
             isMoving = false;
         }
