@@ -68,13 +68,16 @@
     <Compile Include="Assets/scripts/TEMP/委托相关/ActionTest.cs" />
     <Compile Include="Assets/scripts/摄像机/cameraPosition.cs" />
     <Compile Include="Assets/scripts/创建模型/createModel.cs" />
+    <Compile Include="Assets/scripts/MVC/Model/deviceModel.cs" />
     <Compile Include="Assets/scripts/摄像机/RoScal.cs" />
     <Compile Include="Assets/scripts/摄像机/CameraController.cs" />
     <Compile Include="Assets/scripts/摄像机/StagitCamController.cs" />
+    <Compile Include="Assets/scripts/MVC/Model/JsonDataManager.cs" />
     <Compile Include="Assets/scripts/TEMP/json单例/jsonSingleton.cs" />
     <Compile Include="Assets/scripts/编辑模型/handleAddModel.cs" />
     <Compile Include="Assets/scripts/摄像机/CameraTargetMove.cs" />
     <Compile Include="Assets/scripts/createModel/NewBehaviourScript.cs" />
+    <Compile Include="Assets/scripts/MVC/Model/playerModel.cs" />
     <Compile Include="Assets/scripts/创建模型/initProject.cs" />
     <Compile Include="Assets/scripts/TEMP/处理json字符串/jsonTest.cs" />
   </ItemGroup>
