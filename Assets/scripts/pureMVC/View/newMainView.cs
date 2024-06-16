@@ -21,8 +21,9 @@ public class newMainView : MonoBehaviour
         
     }
     public void updateInfo(PlayerDataObj data){
-        // textLev =  "level" +data.playerLevel;
 
-        // txtName = data.playerName;
+        Debug.Log("updateInfo  = " +  data.playerName);
+        txtName.text = data.playerName;
+        textLev.text =  "level" + data.playerLevel.ToString();
     }
 }

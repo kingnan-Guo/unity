@@ -26,6 +26,20 @@ public class newMainViewMediator : Mediator
 
     }
 
+    public void SetView(newMainView view){
+        // 设置 view
+        ViewComponent = view;
+        Debug.Log("SetView");
+        view.btn.onClick.AddListener(() => {
+            // SendNotification(PureNotification.SHOW_PANEL, "data2");
+
+            Debug.Log("SetView onClick");
+
+            SendNotification(PureNotification.UPDATE_PLAYER_DATA_INFO);
+
+        });
+    }
+
     // 重写 监听 通知的方法
     public override string[] ListNotificationInterests(){
         // 这时一个 PureMVC 的 规则
@@ -47,12 +61,14 @@ public class newMainViewMediator : Mediator
         //      2、 通知 数据
 
         // base.HandleNotification(notification);
-
+        Debug.Log("newMainViewMediator HandleNotification" + notification.Body);
         switch (notification.Name)
         {
             case PureNotification.UPDATE_PLAYER_INFO:
                 // 收到 通知后 做处理 更新 信息
-                (ViewComponent as newMainView).updateInfo(notification.Body as PlayerDataObj);
+                if(ViewComponent !=  null){
+                    (ViewComponent as newMainView).updateInfo(notification.Body as PlayerDataObj);// 脚本相关的view
+                }
                 break;
             default:
                 break;

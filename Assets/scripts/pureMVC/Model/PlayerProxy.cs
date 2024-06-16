@@ -41,7 +41,7 @@ public class PlayerProxy : Proxy
         data.playerLevel += 1;
 
         data.playerExp += data.playerLevel;
-        saveData();
+        // saveData();
     }
 
     public void saveData(){
