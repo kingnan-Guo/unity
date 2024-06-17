@@ -65,11 +65,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets/scripts/MVC/Controller/mainController.cs" />
+    <Compile Include="Assets/scripts/baseProject/单例/MonoBehaviour单例基类/singletonMono.cs" />
     <Compile Include="Assets/scripts/鼠标操作/mouseOperate.cs" />
     <Compile Include="Assets/scripts/TEMP/委托相关/ActionTest.cs" />
     <Compile Include="Assets/scripts/pureMVC/GameFacade.cs" />
     <Compile Include="Assets/scripts/pureMVC/Controller/upDateDataCommand.cs" />
     <Compile Include="Assets/scripts/pureMVC/View/newMainView.cs" />
+    <Compile Include="Assets/scripts/baseProject/缓存池模块优化/poolManager.cs" />
     <Compile Include="Assets/scripts/摄像机/cameraPosition.cs" />
     <Compile Include="Assets/scripts/创建模型/createModel.cs" />
     <Compile Include="Assets/scripts/pureMVC/PureMvcMain.cs" />
@@ -80,6 +82,7 @@
     <Compile Include="Assets/scripts/pureMVC/Controller/showPanelCommand.cs" />
     <Compile Include="Assets/scripts/pureMVC/Controller/HidePanelCommand.cs" />
     <Compile Include="Assets/scripts/MPV/presenter/MPV_presenter.cs" />
+    <Compile Include="Assets/scripts/baseProject/缓存池模块优化/DelayPush.cs" />
     <Compile Include="Assets/Runtime/SkipSplash.cs" />
     <Compile Include="Assets/scripts/摄像机/StagitCamController.cs" />
     <Compile Include="Assets/scripts/MVC/Model/JsonDataManager.cs" />
@@ -87,12 +90,18 @@
     <Compile Include="Assets/scripts/MVC/View/mainView.cs" />
     <Compile Include="Assets/scripts/pureMVC/Model/PlayerDataObj.cs" />
     <Compile Include="Assets/scripts/pureMVC/PureNotification.cs" />
+    <Compile Include="Assets/scripts/baseProject/缓存池模块优化/poolManagerOptimize.cs" />
     <Compile Include="Assets/scripts/编辑模型/handleAddModel.cs" />
     <Compile Include="Assets/scripts/MPV/View/MPV_View.cs" />
     <Compile Include="Assets/scripts/MPV/Controller/MPV_controller.cs" />
+    <Compile Include="Assets/scripts/baseProject/单例/自动对象MonoBehaviour单例/SingletonAutoMonoDemo.cs" />
+    <Compile Include="Assets/scripts/baseProject/单例/MonoBehaviour单例基类/NewBehaviourScriptTest.cs" />
     <Compile Include="Assets/scripts/摄像机/CameraTargetMove.cs" />
+    <Compile Include="Assets/scripts/baseProject/单例/自动对象MonoBehaviour单例/SingletonAutoMono.cs" />
     <Compile Include="Assets/scripts/pureMVC/Model/PlayerProxy.cs" />
     <Compile Include="Assets/scripts/createModel/NewBehaviourScript.cs" />
+    <Compile Include="Assets/scripts/baseProject/单例/baseManager.cs" />
+    <Compile Include="Assets/scripts/baseProject/缓存池模块优化/poolManagerDemo.cs" />
     <Compile Include="Assets/scripts/MVC/Model/playerModel.cs" />
     <Compile Include="Assets/scripts/pureMVC/Controller/StartUpCommand.cs" />
     <Compile Include="Assets/scripts/创建模型/initProject.cs" />
