@@ -55,7 +55,8 @@ public class UIManager : baseManager<UIManager>
     {
 
         if(PanelDict.ContainsKey(PlaneName)){
-
+            
+            PanelDict[PlaneName].Show();
             if (callback != null)
             {
                 callback(PanelDict[PlaneName] as T);
@@ -104,6 +105,8 @@ public class UIManager : baseManager<UIManager>
                 callback(panel);
             }
 
+
+            panel.Show();
             // 存入 脚本 ；方便 调用
             PanelDict.Add(PlaneName, panel);
 
@@ -119,7 +122,7 @@ public class UIManager : baseManager<UIManager>
     public void HidePanel(string PlaneName){
         if (PanelDict.ContainsKey(PlaneName))
         {
-            // PanelDict[PlaneName].Hide();
+            PanelDict[PlaneName].Hide();
             GameObject.Destroy(PanelDict[PlaneName].gameObject);
             PanelDict.Remove(PlaneName);
             return;
