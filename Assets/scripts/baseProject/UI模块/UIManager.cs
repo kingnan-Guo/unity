@@ -15,7 +15,9 @@ public enum E_UI_Layer
 public class UIManager : baseManager<UIManager>
 {
     public Dictionary<string, BasePanel> PanelDict = new Dictionary<string, BasePanel>();
-    private Transform canvas;
+    
+    // 记录 UI 的canvas 对象 方便以后 外部应用
+    public RectTransform canvas;
 
     private Transform bottom;
     private Transform middle;
@@ -25,7 +27,7 @@ public class UIManager : baseManager<UIManager>
        
         // 找到 canvas 对象  
         GameObject gameObject = ResourcesMgr.getInstance().Load<GameObject>("baseProject/UI/Canvas");
-        canvas = gameObject.transform;
+        canvas = gameObject.transform as RectTransform;
         // 过场景不移除
         GameObject.DontDestroyOnLoad(gameObject);
 
@@ -132,4 +134,60 @@ public class UIManager : baseManager<UIManager>
     public void DestroyPanel(string PlaneName){
 
     }
+
+
+
+    ///<summary>
+    /// 获取 面板
+    /// </summary>
+    /// <typeparam name="T">面板脚本类型</typeparam>
+    /// <param name="PlaneName">面板名称</param>
+    /// <returns></returns>
+    public T GetPanel<T>(string PlaneName) where T: BasePanel{
+
+        if(PanelDict.ContainsKey(PlaneName)){
+            return PanelDict[PlaneName] as T;
+        }
+        return null;
+        
+    }
+
+
+
+    /// <summary>
+    /// 获取 所有 面板
+    /// </summary>
+    /// <returns></returns>
+    public List<BasePanel> GetAllPanel(){
+        // return PanelDict.Values.ToList();
+        return null;
+    }
+
+
+
+    /// <summary>
+    /// 获取 图层
+    /// </summary>
+    /// <param name="layer">图层</param>
+    /// <returns></returns>
+    public Transform GetLayer(E_UI_Layer layer){
+        switch (layer)
+        {
+            case E_UI_Layer.Bottom:
+                return bottom;
+                // break;
+            case E_UI_Layer.Middle:
+                return middle;
+                // break;
+            case E_UI_Layer.Top:
+                return top;
+            case E_UI_Layer.System:
+                return system;
+            default:
+                return middle;
+        }
+    }
+
+
+
 }

@@ -11,7 +11,7 @@ public class UIDemo : MonoBehaviour
             Debug.Log("PanelFirst show");
             panel.initInfo();
 
-            Invoke("DelayHide", 3);
+            Invoke("DelayHide", 30);
         });
     }
 

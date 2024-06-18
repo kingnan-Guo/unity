@@ -20,13 +20,14 @@ public class BasePanel : MonoBehaviour
 
 
     // Start is called before the first frame update
-    void Awake()
+    protected virtual void Awake()
     {
         // 获取下面所有 子控件 挂在的脚本
         this.FindChildControl<Button>();
         this.FindChildControl<Image>();
         this.FindChildControl<Text>();
         this.FindChildControl<Toggle>();
+        this.FindChildControl<InputField>();
 
         Debug.Log("controlDic.Count = " + controlDic.Count);
     }
@@ -44,11 +45,11 @@ public class BasePanel : MonoBehaviour
     {
         // 获取下面所有 子控件 挂在的脚本
         T[] controls = this.GetComponentsInChildren<T>();
-        string objectName;
+        
         // Debug.Log("buttons.Length = " + buttons.Length);
         foreach (T cs in controls)
         {
-            objectName = cs.gameObject.name;
+            string objectName = cs.gameObject.name;
             // 判断 字典中 是否 包含 当前 控件
             if(controlDic.ContainsKey(objectName)){
                 controlDic[objectName].Add(cs);
@@ -57,10 +58,55 @@ public class BasePanel : MonoBehaviour
                 List<UIBehaviour> list = new List<UIBehaviour>();
                 list.Add(cs);
                 controlDic.Add(objectName, list);
+
+                // 如果是 按钮  直接 添加 监听;
+                if(cs is Button){
+                    (cs as Button).onClick.AddListener(() => {
+                        OnClick(objectName);
+                    });
+                }
+
+                if(cs is Toggle){
+                    (cs as Toggle).onValueChanged.AddListener((value) => {
+                        onValueChanged(objectName, value);
+                    });
+                }
             }
         }
+
+        // for (int i = 0; i < controls.Length; i++)
+        // {
+        //     string objectName;
+        //     // T cs = controls[i];
+        //     objectName = controls[i].gameObject.name;
+        //     // 判断 字典中 是否 包含 当前 控件
+        //     if(controlDic.ContainsKey(objectName)){
+        //         controlDic[objectName].Add(controls[i]);
+        //     } 
+        //     else{
+        //         List<UIBehaviour> list = new List<UIBehaviour>();
+        //         list.Add(controls[i]);
+        //         controlDic.Add(objectName, list);
+        //         Debug.Log("objectName = " + objectName);
+        //         // 如果是 按钮  直接 添加 监听;
+        //         if(controls[i] is Button){
+        //             (controls[i] as Button).onClick.AddListener(() => {
+        //                 OnClick(objectName);
+        //             });
+        //         }
+        //     }
+        // }
     }
 
+
+    /// <summary>
+
+    protected virtual void OnClick(string buttonName){
+
+    }
+    protected virtual void onValueChanged(string buttonName, bool value){
+
+    }
 
 
     /// <summary>
