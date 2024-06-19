@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class panelFirst : BasePanel
@@ -16,8 +17,31 @@ public class panelFirst : BasePanel
         // });
 
 
-        GetControl<Button>("Button1 (Legacy)");
+        GetControl<Button>("Button1");
 
+
+
+        // 添加 自定义 按钮事件
+        // EventTrigger eventTrigger = GetControl<Button>("Button1").gameObject.AddComponent<EventTrigger>();
+        // EventTrigger.Entry entry = new EventTrigger.Entry();
+        // entry.eventID = EventTriggerType.Drag;
+        // entry.callback.AddListener((data) => {
+        //     Debug.Log("Button1 Drag 鼠标 拖动");
+        // });
+        // eventTrigger.triggers.Add(entry);
+
+
+        // // 添加 自定义 按钮事件
+        // EventTrigger eventTrigger2 = GetControl<Button>("Button1").gameObject.AddComponent<EventTrigger>();
+        // EventTrigger.Entry entry2 = new EventTrigger.Entry();
+        // entry2.eventID = EventTriggerType.PointerClick;
+        // entry2.callback.AddListener((data) => {
+        //     Debug.Log("Button1 PointerClick");
+        // });
+
+        UIManager.AddCustomEventListener(GetControl<Button>("Button2"), EventTriggerType.PointerEnter, (data) => {
+            Debug.Log("Button2 PointerEnter");
+        });
 
     }
 

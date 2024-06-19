@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.EventSystems;
 
 public enum E_UI_Layer
 {
@@ -186,6 +187,33 @@ public class UIManager : baseManager<UIManager>
             default:
                 return middle;
         }
+    }
+
+
+    /// <summary>
+    /// 给 控件 添加 自定义 事件 监听
+    /// </summary>
+    /// <param name="control">控件</param>
+    /// <param name="type">事件类型</param>
+    /// <param name="callBack">事件 相应 回调</param>
+    /// </summary>
+    /// 
+    public static void AddCustomEventListener(UIBehaviour control, EventTriggerType type, UnityAction<BaseEventData> callBack){
+        EventTrigger eventTrigger = control.GetComponent<EventTrigger>();
+        if(eventTrigger == null){
+            // control.AddComponent<EventTrigger>()
+            eventTrigger = control.gameObject.AddComponent<EventTrigger>();
+        }
+        EventTrigger.Entry entry = new EventTrigger.Entry();
+        entry.eventID = type;
+
+        entry.callback.AddListener(callBack);
+
+        // 把 new 出来 的 事件 相应对象 entry 加到  eventTrigger 中
+        // 所有的 事件响应 都在 triggers 上
+        eventTrigger.triggers.Add(entry);
+
+
     }
 
 
