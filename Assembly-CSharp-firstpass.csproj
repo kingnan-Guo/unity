@@ -19,7 +19,7 @@
     <RootNamespace></RootNamespace>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
     <TargetFramework>netstandard2.1</TargetFramework>
     <BaseDirectory>.</BaseDirectory>
   </PropertyGroup>
@@ -54,7 +54,7 @@
     <UnityProjectGenerator>Package</UnityProjectGenerator>
     <UnityProjectGeneratorVersion>2.0.22</UnityProjectGeneratorVersion>
     <UnityProjectGeneratorStyle>SDK</UnityProjectGeneratorStyle>
-    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityProjectType>GamePlugins:3</UnityProjectType>
     <UnityBuildTarget>WebGL:20</UnityBuildTarget>
     <UnityVersion>2022.3.30f1</UnityVersion>
   </PropertyGroup>
@@ -64,61 +64,27 @@
     <Analyzer Include="/Applications/Unity/Hub/Editor/2022.3.30f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets/scripts/MVC/Controller/mainController.cs" />
-    <Compile Include="Assets/scripts/baseProject/单例/MonoBehaviour单例基类/singletonMono.cs" />
-    <Compile Include="Assets/scripts/鼠标操作/mouseOperate.cs" />
-    <Compile Include="Assets/scripts/baseProject/UI模块/UIDemo.cs" />
-    <Compile Include="Assets/scripts/pureMVC/GameFacade.cs" />
-    <Compile Include="Assets/scripts/baseProject/UI模块/UIManager.cs" />
-    <Compile Include="Assets/scripts/baseProject/加载AB包/ABManager.cs" />
-    <Compile Include="Assets/scripts/baseProject/加载AB包/loadABDemo.cs" />
-    <Compile Include="Assets/scripts/baseProject/加载AB包/loadAB.cs" />
-    <Compile Include="Assets/scripts/baseProject/切换场景/ScenceMgr.cs" />
-    <Compile Include="Assets/scripts/baseProject/公共Mono模块/MonoDemo.cs" />
-    <Compile Include="Assets/scripts/pureMVC/Controller/upDateDataCommand.cs" />
-    <Compile Include="Assets/scripts/baseProject/缓存池模块优化/poolManager.cs" />
-    <Compile Include="Assets/scripts/pureMVC/View/newMainView.cs" />
-    <Compile Include="Assets/scripts/摄像机/cameraPosition.cs" />
-    <Compile Include="Assets/scripts/baseProject/输入控制模块/InputMgr.cs" />
-    <Compile Include="Assets/scripts/baseProject/事件中心/player.cs" />
-    <Compile Include="Assets/scripts/pureMVC/PureMvcMain.cs" />
-    <Compile Include="Assets/scripts/MVC/Model/deviceModel.cs" />
-    <Compile Include="Assets/scripts/MPV/Model/MPV_Model.cs" />
-    <Compile Include="Assets/scripts/pureMVC/Controller/showPanelCommand.cs" />
-    <Compile Include="Assets/scripts/pureMVC/Controller/HidePanelCommand.cs" />
-    <Compile Include="Assets/scripts/MPV/presenter/MPV_presenter.cs" />
-    <Compile Include="Assets/scripts/baseProject/缓存池模块优化/DelayPush.cs" />
-    <Compile Include="Assets/scripts/baseProject/公共Mono模块/MonoController.cs" />
-    <Compile Include="Assets/scripts/baseProject/事件中心/Monster.cs" />
-    <Compile Include="Assets/Runtime/SkipSplash.cs" />
-    <Compile Include="Assets/scripts/MVC/Model/JsonDataManager.cs" />
-    <Compile Include="Assets/scripts/baseProject/事件中心/EventCenterOptimize.cs" />
-    <Compile Include="Assets/scripts/baseProject/公共Mono模块/MonoManager.cs" />
-    <Compile Include="Assets/scripts/baseProject/输入控制模块/InputDemo.cs" />
-    <Compile Include="Assets/scripts/MVC/View/mainView.cs" />
-    <Compile Include="Assets/scripts/pureMVC/Model/PlayerDataObj.cs" />
-    <Compile Include="Assets/scripts/pureMVC/PureNotification.cs" />
-    <Compile Include="Assets/scripts/baseProject/缓存池模块优化/poolManagerOptimize.cs" />
-    <Compile Include="Assets/scripts/baseProject/UI模块/panelFirst.cs" />
-    <Compile Include="Assets/scripts/baseProject/事件中心/EventCenter.cs" />
-    <Compile Include="Assets/scripts/MPV/View/MPV_View.cs" />
-    <Compile Include="Assets/scripts/MPV/Controller/MPV_controller.cs" />
-    <Compile Include="Assets/scripts/baseProject/单例/自动对象MonoBehaviour单例/SingletonAutoMonoDemo.cs" />
-    <Compile Include="Assets/scripts/baseProject/资源加载模块/ResourcesManagerDemo.cs" />
-    <Compile Include="Assets/scripts/baseProject/音效管理器/AudioMgr.cs" />
-    <Compile Include="Assets/scripts/baseProject/单例/MonoBehaviour单例基类/NewBehaviourScriptTest.cs" />
-    <Compile Include="Assets/scripts/baseProject/资源加载模块/ResourcesMgr.cs" />
-    <Compile Include="Assets/scripts/baseProject/资源加载模块/ResourcesManager.cs" />
-    <Compile Include="Assets/scripts/baseProject/单例/自动对象MonoBehaviour单例/SingletonAutoMono.cs" />
-    <Compile Include="Assets/scripts/baseProject/切换场景/ScenceManagerDemo.cs" />
-    <Compile Include="Assets/scripts/pureMVC/Model/PlayerProxy.cs" />
-    <Compile Include="Assets/scripts/baseProject/UI模块/BasePanel.cs" />
-    <Compile Include="Assets/scripts/baseProject/单例/baseManager.cs" />
-    <Compile Include="Assets/scripts/baseProject/缓存池模块优化/poolManagerDemo.cs" />
-    <Compile Include="Assets/scripts/MVC/Model/playerModel.cs" />
-    <Compile Include="Assets/scripts/pureMVC/Controller/StartUpCommand.cs" />
-    <Compile Include="Assets/scripts/baseProject/缓存池模块优化/poolManagerOptimizeAsync.cs" />
-    <Compile Include="Assets/scripts/pureMVC/View/newMainViewMediator.cs" />
+    <Compile Include="Assets/plugins/pureMVC/Interfaces/INotification.cs" />
+    <Compile Include="Assets/plugins/pureMVC/Interfaces/IFacade.cs" />
+    <Compile Include="Assets/plugins/pureMVC/Patterns/Observer/Notification.cs" />
+    <Compile Include="Assets/plugins/pureMVC/Patterns/Observer/Observer.cs" />
+    <Compile Include="Assets/plugins/pureMVC/Core/Controller.cs" />
+    <Compile Include="Assets/plugins/pureMVC/Patterns/Observer/Notifier.cs" />
+    <Compile Include="Assets/plugins/pureMVC/Interfaces/IProxy.cs" />
+    <Compile Include="Assets/plugins/pureMVC/Core/Model.cs" />
+    <Compile Include="Assets/plugins/pureMVC/Patterns/Command/SimpleCommand.cs" />
+    <Compile Include="Assets/plugins/pureMVC/Patterns/Proxy/Proxy.cs" />
+    <Compile Include="Assets/plugins/pureMVC/Interfaces/IObserver.cs" />
+    <Compile Include="Assets/plugins/pureMVC/Interfaces/IController.cs" />
+    <Compile Include="Assets/plugins/pureMVC/Patterns/Command/MacroCommand.cs" />
+    <Compile Include="Assets/plugins/pureMVC/Patterns/Facade/Facade.cs" />
+    <Compile Include="Assets/plugins/pureMVC/Interfaces/ICommand.cs" />
+    <Compile Include="Assets/plugins/pureMVC/Patterns/Mediator/Mediator.cs" />
+    <Compile Include="Assets/plugins/pureMVC/Interfaces/IView.cs" />
+    <Compile Include="Assets/plugins/pureMVC/Interfaces/INotifier.cs" />
+    <Compile Include="Assets/plugins/pureMVC/Interfaces/IModel.cs" />
+    <Compile Include="Assets/plugins/pureMVC/Interfaces/IMediator.cs" />
+    <Compile Include="Assets/plugins/pureMVC/Core/View.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -1035,7 +1001,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-firstpass.csproj" />
   </ItemGroup>
   <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
   <ItemGroup>
