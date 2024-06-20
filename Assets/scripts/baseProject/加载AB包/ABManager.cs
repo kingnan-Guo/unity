@@ -1,13 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class ABManager : SingletonAutoMono<ABManager>
 {
 
 
     // 字典存储 加载的 AB 包
-    private Dictionary<string, Object> ABDic = new Dictionary<string, Object>();
+    private Dictionary<string, AssetBundle> ABDic = new Dictionary<string, AssetBundle>();
 
 
     // 主包
@@ -48,13 +49,16 @@ public class ABManager : SingletonAutoMono<ABManager>
 
 
 
-    //// <summary>
+
+    // 递归加载 Ab包的依赖
+    
+
+    ///<summary>
     /// 同步 加载AB包
     /// </summary>
-    /// <param name="path"></param>
-    /// <param name="callback"></param>
-    public object LoadRes(string ABName, string resName)
-    {
+    /// <param name="ABName">AB包名</param>
+    ///<summary>
+    private void loadAB(string ABName){
         /// 加载 AB 包
         if(mianAB == null){
             // 加载 主包
@@ -64,23 +68,33 @@ public class ABManager : SingletonAutoMono<ABManager>
         }
 
         /// 获取 依赖包的 关系
+        AssetBundle dependAB = null;
+        AssetBundleManifest dependABmanifest = null;
         string[] dependABNameArr = manifest.GetAllDependencies(ABName);
         // 加载 依赖包
         for(int i = 0; i < dependABNameArr.Length; i++){
             string dependABPath = pathUrl + dependABNameArr[i];
-            // AssetBundle dependAB = AssetBundle.LoadFromFile(dependABPath);
-            // dependABList.Add(dependAB);
-
+            
             // 判断 包是否被加载过
             if(!ABDic.ContainsKey(dependABNameArr[i])){
                 // 加载 依赖包
-                AssetBundle dependAB = AssetBundle.LoadFromFile(dependABPath);
+                dependAB = AssetBundle.LoadFromFile(dependABPath);
+
+                // dependABmanifest = dependAB.LoadAsset<AssetBundleManifest>("AssetBundleManifest");
+                // Debug.Log("dependABmanifest =="+ dependABmanifest);
+                // // 加载 依赖包 中的 资源
+                // string[] dependResNameArr = dependABmanifest.GetAllAssetBundles();
+                // for(int j = 0; j < dependResNameArr.Length; j++){
+                //     Debug.Log("dependResNameArr =="+ dependResNameArr[j]);
+                //     // string dependResPath = pathUrl + dependResNameArr[j];
+                //     // 加载 依赖包 中的 资源
+                //     // dependAB = AssetBundle.LoadFromFile(dependResPath);
+                // }
+                // 存入 依赖包
                 // 存入 字典
                 ABDic.Add(dependABNameArr[i], dependAB);
             }
         }
-
- 
 
         if(!ABDic.ContainsKey(ABName)){
             /// 加载 资源 来源包;目标包
@@ -89,18 +103,66 @@ public class ABManager : SingletonAutoMono<ABManager>
             // GameObject.Instantiate(ab);
             ABDic.Add(ABName, ab);
         }
-        
+    }
 
-        /// 加载 资源
-        return (ABDic[ABName] as AssetBundle).LoadAsset(resName);
+
+
+    //// <summary>
+    /// 同步 加载AB包
+    /// </summary>
+    /// <param name="path"></param>
+    /// <param name="callback"></param>
+    public object LoadRes(string ABName, string resName)
+    {
+
+        loadAB(ABName);
+        object obj = ABDic[ABName].LoadAsset(resName);
+        if(obj is GameObject){
+            return GameObject.Instantiate(obj as GameObject);
+        } else {
+            return obj;
+        }
+   
+        
+    }
+
+
+
+    // 同步 加载 AB 包 ； 根据类型
+    public object LoadRes(string ABName, string resName, System.Type type){
+        loadAB(ABName);
+        // 指定类型 
+        object obj = ABDic[ABName].LoadAsset(resName, type);
+        if(obj is GameObject){
+            return GameObject.Instantiate(obj as GameObject);
+        } else {
+            return obj;
+        }
+    }
+
+
+    // 同步 加载  泛型
+    public T LoadRes<T>(string ABName, string resName) where T : Object
+    {
+        loadAB(ABName);
+        // 指定类型 
+        T obj = ABDic[ABName].LoadAsset<T>(resName);
+        if(obj is GameObject){
+            return GameObject.Instantiate(obj);
+        } else {
+            return obj;
+        }
     }
 
 
     /// <summary>
     /// 单个 AB 包卸载
     /// </summary>
-    public void unLoad(){
-
+    public void unLoad(string ABName){
+        if( ABDic.ContainsKey(ABName) ){
+            ABDic[ABName].Unload(false);
+            ABDic.Remove(ABName);
+        }
     }
 
 
@@ -108,7 +170,22 @@ public class ABManager : SingletonAutoMono<ABManager>
     /// 卸载所有AB包
     /// </summary>
     public void unLoadAll(){
+        AssetBundle.UnloadAllAssetBundles(false);
+        ABDic.Clear();
+        mianAB = null;
+        manifest = null;
+    }
 
+
+    /// <summary>
+    /// 卸载 AB包
+    /// </summary>
+    /// <param name="ABName"></param>
+    public void unLoadAB(string ABName){
+        if( ABDic.ContainsKey(ABName) ){
+            ABDic[ABName].Unload(false);
+            ABDic.Remove(ABName);
+        }
     }
 
     /// <summary>
@@ -116,9 +193,74 @@ public class ABManager : SingletonAutoMono<ABManager>
     /// </summary>
     /// <param name="path"></param>
     /// <param name="callback"></param>
-    public void LoadResAsync(string ABPath, string resPath, System.Action<Object> callback)
-    {
+    public void LoadResAsync(string ABName, string resName, UnityAction<Object> callback){
+        // 启动协程
+        StartCoroutine(ReallyLoadResAsync(ABName, resName, callback));
+    }
 
+
+
+
+    private IEnumerator ReallyLoadResAsync(string ABName, string resName, UnityAction<Object> callback){
+        loadAB(ABName);
+        // 指定类型 
+        AssetBundleRequest assetBundleRequest = ABDic[ABName].LoadAssetAsync(resName);
+        yield return assetBundleRequest;
+
+        // if(assetBundleRequest.asset == null){
+        // }
+
+        if(assetBundleRequest.asset is GameObject){
+            callback(GameObject.Instantiate(assetBundleRequest.asset));
+        } else {
+            callback(assetBundleRequest.asset);
+        }
+    }
+
+
+
+
+    public void LoadResAsync(string ABName, string resName, System.Type type, UnityAction<Object> callback) 
+    {
+        // 启动协程
+        StartCoroutine(ReallyLoadResAsync(ABName, resName, type, callback));
+    }
+
+    private IEnumerator ReallyLoadResAsync(string ABName, string resName, System.Type type, UnityAction<Object> callback)
+    {
+        loadAB(ABName);
+        // 指定类型 
+        AssetBundleRequest assetBundleRequest = ABDic[ABName].LoadAssetAsync(resName, type);
+        yield return assetBundleRequest;
+        // if(assetBundleRequest.asset == null){
+        // }
+        if(assetBundleRequest.asset is GameObject){
+            callback(GameObject.Instantiate(assetBundleRequest.asset) );
+        } else {
+            callback(assetBundleRequest.asset);
+        }
+    }
+
+
+
+
+    public void LoadResAsync<T>(string ABName, string resName, UnityAction<T> callback) where T: Object
+    {
+        // 启动协程
+        StartCoroutine(ReallyLoadResAsync<T>(ABName, resName, callback));
+    }
+
+    private IEnumerator ReallyLoadResAsync<T>(string ABName, string resName, UnityAction<T> callback) where T : Object{
+        loadAB(ABName);
+        // 指定类型 
+        AssetBundleRequest assetBundleRequest = ABDic[ABName].LoadAssetAsync<T>(resName);
+        yield return assetBundleRequest;
+
+        if(assetBundleRequest.asset is GameObject){
+            callback(GameObject.Instantiate(assetBundleRequest.asset as T));
+        } else {
+            callback(assetBundleRequest.asset as T);
+        }
     }
 
 }
