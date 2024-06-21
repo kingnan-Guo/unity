@@ -66,6 +66,7 @@
   <ItemGroup>
     <Compile Include="Assets/scripts/baseProject/单例/MonoBehaviour单例基类/singletonMono.cs" />
     <Compile Include="Assets/scripts/baseProject/UI模块/UIDemo.cs" />
+    <Compile Include="Assets/scripts/baseFunction/楼层移动/transformPosition.cs" />
     <Compile Include="Assets/scripts/baseProject/UI模块/UIManager.cs" />
     <Compile Include="Assets/scripts/baseProject/加载AB包/ABManager.cs" />
     <Compile Include="Assets/scripts/baseProject/加载AB包/loadABDemo.cs" />
@@ -76,6 +77,7 @@
     <Compile Include="Assets/scripts/baseProject/输入控制模块/InputMgr.cs" />
     <Compile Include="Assets/scripts/baseProject/事件中心/player.cs" />
     <Compile Include="Assets/scripts/baseFunction/对建筑物的偏移/transFormModel.cs" />
+    <Compile Include="Assets/scripts/baseFunction/鼠标事件/mouseInputMgr.cs" />
     <Compile Include="Assets/scripts/baseProject/缓存池模块优化/DelayPush.cs" />
     <Compile Include="Assets/scripts/baseProject/公共Mono模块/MonoController.cs" />
     <Compile Include="Assets/scripts/baseProject/事件中心/Monster.cs" />
@@ -83,6 +85,8 @@
     <Compile Include="Assets/scripts/baseProject/事件中心/EventCenterOptimize.cs" />
     <Compile Include="Assets/scripts/baseProject/公共Mono模块/MonoManager.cs" />
     <Compile Include="Assets/scripts/baseProject/输入控制模块/InputDemo.cs" />
+    <Compile Include="Assets/scripts/baseFunction/鼠标点击/raycastHitTest.cs" />
+    <Compile Include="Assets/scripts/baseFunction/使用一个mono管理所有的普通操作/functionManagerInheritMono.cs" />
     <Compile Include="Assets/scripts/baseProject/缓存池模块优化/poolManagerOptimize.cs" />
     <Compile Include="Assets/scripts/baseProject/UI模块/panelFirst.cs" />
     <Compile Include="Assets/scripts/baseProject/事件中心/EventCenter.cs" />
@@ -99,6 +103,7 @@
     <Compile Include="Assets/scripts/baseProject/缓存池模块优化/poolManagerDemo.cs" />
     <Compile Include="Assets/scripts/baseProject/缓存池模块优化/poolManagerOptimizeAsync.cs" />
     <Compile Include="Assets/scripts/baseFunction/对建筑物的偏移/modelAnu.cs" />
+    <Compile Include="Assets/scripts/baseFunction/悬浮到设备上获取设备信息/getDeviceInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
