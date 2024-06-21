@@ -874,3 +874,756 @@ Received Import Request.
 Start importing Assets/waibudaoru/SKY/HDR04.hdr using Guid(96a7f0dfe61e82c4db109857409f2703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '962df4e2bd64f7b90c93cd88d461e4de') in 0.274450 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 1
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.681 seconds
+Refreshing native plugins compatible for Editor in 1.81 ms, found 2 plugins.
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.164 seconds
+Domain Reload Profiling: 2845ms
+	BeginReloadAssembly (186ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (50ms)
+	RebuildCommonClasses (46ms)
+	RebuildNativeTypeToScriptingClass (29ms)
+	initialDomainReloadingComplete (58ms)
+	LoadAllAssembliesAndSetupDomain (362ms)
+		LoadAssemblies (406ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (44ms)
+			TypeCache.Refresh (15ms)
+				TypeCache.ScanAssembly (1ms)
+			ScanForSourceGeneratedMonoScriptInfo (15ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (2164ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (766ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (7ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (84ms)
+			ProcessInitializeOnLoadAttributes (642ms)
+			ProcessInitializeOnLoadMethodAttributes (25ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
+Refreshing native plugins compatible for Editor in 1.33 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3116 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 25 unused Assets / (398.6 KB). Loaded Objects now: 3651.
+Memory consumption went from 191.1 MB to 190.7 MB.
+Total: 5.139586 ms (FindLiveObjects: 0.327926 ms CreateObjectMapping: 0.274678 ms MarkObjects: 4.194430 ms  DeleteObjects: 0.341561 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 241.304683 seconds.
+  path: Assets/waibudaoru/Textures_R/JN_di mian.jpg
+  artifactKey: Guid(4b51b0426c825a84abd3d6b78eeacd70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/waibudaoru/Textures_R/JN_di mian.jpg using Guid(4b51b0426c825a84abd3d6b78eeacd70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1825f0d47f7b3b03f81629f34e13d425') in 0.069320 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 14.011027 seconds.
+  path: Assets/dahuyuahqu.fbm
+  artifactKey: Guid(07f993e0d18b91d4aa823783de77f7cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dahuyuahqu.fbm using Guid(07f993e0d18b91d4aa823783de77f7cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18e50ac46951d398a11424253a9a1923') in 0.001209 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 13.873544 seconds.
+  path: Assets/dahuyuahqu.fbx
+  artifactKey: Guid(d9aad1df917573146a0dea3c3d285734) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dahuyuahqu.fbx using Guid(d9aad1df917573146a0dea3c3d285734) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 7.064865 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/materials/gcz18901.mat.meta in SourceAssetDB has modification time of '2024-06-13T01:44:04Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+  ERROR: Build asset version error: assets/materials/gcz18901.mat.meta in SourceAssetDB has modification time of '2024-06-13T01:44:04Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 55
+========================================================================
+Received Import Request.
+  Time since last request: 0.000836 seconds.
+  path: Assets/dahuyuahqu.fbx
+  artifactKey: Guid(d9aad1df917573146a0dea3c3d285734) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dahuyuahqu.fbx using Guid(d9aad1df917573146a0dea3c3d285734) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 12.905517 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/dahuyuahqu.fbx.meta in SourceAssetDB has modification time of '2024-06-21T14:13:49Z' while content on disk has modification time of '2024-06-21T14:14:17Z'
+  ERROR: Build asset version error: assets/dahuyuahqu.fbx.meta in SourceAssetDB has modification time of '2024-06-21T14:13:49Z' while content on disk has modification time of '2024-06-21T14:14:17Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 55
+========================================================================
+Received Import Request.
+  Time since last request: 0.737388 seconds.
+  path: Assets/Animated Trees Package/Prefabs/Animated/Acacias/Acacia 2.prefab
+  artifactKey: Guid(75b267024de1c1d459e70d231ea6b79f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated Trees Package/Prefabs/Animated/Acacias/Acacia 2.prefab using Guid(75b267024de1c1d459e70d231ea6b79f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '853fca784a25a2cfb10e901edffd327b') in 0.085887 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 139
+========================================================================
+Received Import Request.
+  Time since last request: 0.879156 seconds.
+  path: Assets/Animated Trees Package/Prefabs/Animated/Acacias/Acacia 4.prefab
+  artifactKey: Guid(e643d85eacac01d4e9c86e88af58d7c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated Trees Package/Prefabs/Animated/Acacias/Acacia 4.prefab using Guid(e643d85eacac01d4e9c86e88af58d7c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a48f716a637373cb6cce1110d44b66b') in 0.029488 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 139
+========================================================================
+Received Import Request.
+  Time since last request: 1.793182 seconds.
+  path: Assets/Animated Trees Package/Prefabs/Animated/Dry Trees/Dry Tree 2.prefab
+  artifactKey: Guid(fc25ca843d6cc3b4798874781d61657b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated Trees Package/Prefabs/Animated/Dry Trees/Dry Tree 2.prefab using Guid(fc25ca843d6cc3b4798874781d61657b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf129df3e948cfe180176b6de0c3361a') in 0.042093 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 116
+========================================================================
+Received Import Request.
+  Time since last request: 0.575612 seconds.
+  path: Assets/Animated Trees Package/Prefabs/Animated/Dry Trees/Dry Tree 1.prefab
+  artifactKey: Guid(1b2d2a861c7c6be48bcf3b30629de835) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated Trees Package/Prefabs/Animated/Dry Trees/Dry Tree 1.prefab using Guid(1b2d2a861c7c6be48bcf3b30629de835) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86c3218710ce54200ea3966121aa4eb4') in 0.029574 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 139
+========================================================================
+Received Import Request.
+  Time since last request: 1.016630 seconds.
+  path: Assets/Animated Trees Package/Prefabs/Animated/Junipers/Juniper 1.prefab
+  artifactKey: Guid(101600470ce5e3749af6321af3ce9b21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated Trees Package/Prefabs/Animated/Junipers/Juniper 1.prefab using Guid(101600470ce5e3749af6321af3ce9b21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43bb519613bc94ca37e5741fb3b41193') in 0.048566 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 96
+========================================================================
+Received Import Request.
+  Time since last request: 1.348238 seconds.
+  path: Assets/Animated Trees Package/Prefabs/Animated/Oaks/Oak 2.prefab
+  artifactKey: Guid(d8f503644c9ffbe42bdf7e6b9f0cebcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated Trees Package/Prefabs/Animated/Oaks/Oak 2.prefab using Guid(d8f503644c9ffbe42bdf7e6b9f0cebcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8e19ed6a4df5e7be02a9805ca55aa73') in 0.048049 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 146
+========================================================================
+Received Import Request.
+  Time since last request: 1.218198 seconds.
+  path: Assets/Animated Trees Package/Prefabs/Animated/Oaks/Oak 1.prefab
+  artifactKey: Guid(867151643308bbc458d63f0412bd3a54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated Trees Package/Prefabs/Animated/Oaks/Oak 1.prefab using Guid(867151643308bbc458d63f0412bd3a54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ae9fc0fd15052d9dd3c4623faae765a') in 0.042908 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 140
+========================================================================
+Received Import Request.
+  Time since last request: 1.697392 seconds.
+  path: Assets/Animated Trees Package/Prefabs/Animated/Acacias/Acacia 3.prefab
+  artifactKey: Guid(0c58f51dd41360d44b3f0d8e2065b5b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated Trees Package/Prefabs/Animated/Acacias/Acacia 3.prefab using Guid(0c58f51dd41360d44b3f0d8e2065b5b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55e9320c27ac6a47315defee2ca6e3af') in 0.036454 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 138
+========================================================================
+Received Import Request.
+  Time since last request: 3.132561 seconds.
+  path: Assets/Animated Trees Package/Prefabs/Animated/Acacias/Acacia 5.prefab
+  artifactKey: Guid(512072a6fdbefb148a6b69f666b0571d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated Trees Package/Prefabs/Animated/Acacias/Acacia 5.prefab using Guid(512072a6fdbefb148a6b69f666b0571d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'acd654ae133fc8f0e2fa9343f090deb9') in 0.028393 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 139
+========================================================================
+Received Import Request.
+  Time since last request: 27.816970 seconds.
+  path: Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg
+  artifactKey: Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg using Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.018016 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+  ERROR: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.010794 seconds.
+  path: Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg
+  artifactKey: Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg using Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.016554 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+  ERROR: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.066523 seconds.
+  path: Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg
+  artifactKey: Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg using Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.016302 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+  ERROR: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.021307 seconds.
+  path: Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg
+  artifactKey: Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg using Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.026563 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+  ERROR: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.029772 seconds.
+  path: Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg
+  artifactKey: Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg using Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.009105 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+  ERROR: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.022654 seconds.
+  path: Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg
+  artifactKey: Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg using Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.009962 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+  ERROR: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.023002 seconds.
+  path: Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg
+  artifactKey: Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg using Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.008992 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+  ERROR: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.020985 seconds.
+  path: Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg
+  artifactKey: Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg using Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.020019 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+  ERROR: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.001633 seconds.
+  path: Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg
+  artifactKey: Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg using Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.013728 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+  ERROR: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.019935 seconds.
+  path: Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg
+  artifactKey: Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg using Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.008955 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+  ERROR: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.018696 seconds.
+  path: Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg
+  artifactKey: Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg using Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.010901 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+  ERROR: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.019685 seconds.
+  path: Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg
+  artifactKey: Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg using Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.009695 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+  ERROR: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.017275 seconds.
+  path: Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg
+  artifactKey: Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg using Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.007402 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+  ERROR: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.023640 seconds.
+  path: Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg
+  artifactKey: Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg using Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.006997 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+  ERROR: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.020366 seconds.
+  path: Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg
+  artifactKey: Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg using Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.008439 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+  ERROR: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.017403 seconds.
+  path: Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg
+  artifactKey: Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg using Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.008845 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+  ERROR: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.022539 seconds.
+  path: Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg
+  artifactKey: Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg using Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.008434 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+  ERROR: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.022218 seconds.
+  path: Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg
+  artifactKey: Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg using Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.010725 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+  ERROR: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.027406 seconds.
+  path: Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg
+  artifactKey: Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg using Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.010828 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+  ERROR: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.021285 seconds.
+  path: Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg
+  artifactKey: Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg using Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.022278 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+  ERROR: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.018433 seconds.
+  path: Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg
+  artifactKey: Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg using Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.009656 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+  ERROR: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.024285 seconds.
+  path: Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg
+  artifactKey: Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg using Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.007548 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+  ERROR: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.023635 seconds.
+  path: Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg
+  artifactKey: Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg using Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.008485 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+  ERROR: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.024527 seconds.
+  path: Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg
+  artifactKey: Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg using Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.022293 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+  ERROR: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.027883 seconds.
+  path: Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg
+  artifactKey: Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg using Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.008307 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+  ERROR: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.021348 seconds.
+  path: Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg
+  artifactKey: Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg using Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.009782 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+  ERROR: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.020952 seconds.
+  path: Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg
+  artifactKey: Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg using Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.010082 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+  ERROR: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.017322 seconds.
+  path: Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg
+  artifactKey: Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg using Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.008854 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+  ERROR: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.024531 seconds.
+  path: Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg
+  artifactKey: Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg using Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.021552 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+  ERROR: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.027049 seconds.
+  path: Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg
+  artifactKey: Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg using Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.013566 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+  ERROR: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.019522 seconds.
+  path: Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg
+  artifactKey: Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg using Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.022060 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+  ERROR: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000965 seconds.
+  path: Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg
+  artifactKey: Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg using Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.012451 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+  ERROR: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.016587 seconds.
+  path: Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg
+  artifactKey: Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg using Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.019203 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+  ERROR: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.009934 seconds.
+  path: Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg
+  artifactKey: Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg using Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.007474 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+  ERROR: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.022308 seconds.
+  path: Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg
+  artifactKey: Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg using Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.014065 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+  ERROR: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.025238 seconds.
+  path: Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg
+  artifactKey: Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg using Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.009964 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+  ERROR: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.018273 seconds.
+  path: Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg
+  artifactKey: Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg using Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.007531 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+  ERROR: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.027539 seconds.
+  path: Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg
+  artifactKey: Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg using Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.020171 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+  ERROR: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.029489 seconds.
+  path: Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg
+  artifactKey: Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg using Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.023260 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+  ERROR: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.028597 seconds.
+  path: Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg
+  artifactKey: Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg using Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.019746 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+  ERROR: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.030775 seconds.
+  path: Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg
+  artifactKey: Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg using Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.008282 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+  ERROR: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.018730 seconds.
+  path: Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg
+  artifactKey: Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg using Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.016770 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+  ERROR: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.002477 seconds.
+  path: Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg
+  artifactKey: Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg using Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.025934 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+  ERROR: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.005480 seconds.
+  path: Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg
+  artifactKey: Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg using Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.007614 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+  ERROR: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.020225 seconds.
+  path: Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg
+  artifactKey: Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg using Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.006999 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+  ERROR: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.019638 seconds.
+  path: Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg
+  artifactKey: Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dahuyuahqu.fbm/2K-road_12-diffuse.jpg using Guid(800739647b053fe448988d3f2d9bb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.017373 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+  ERROR: Build asset version error: assets/dahuyuahqu.fbm/2k-road_12-diffuse.jpg.meta in SourceAssetDB has modification time of '2024-06-13T01:43:52Z' while content on disk has modification time of '2024-06-21T14:13:46Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 23.943834 seconds.
+  path: Assets/Animated Trees Package/Textures/acacia_bark_normal.png
+  artifactKey: Guid(09899937793908b4ba2a2ef67291257d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated Trees Package/Textures/acacia_bark_normal.png using Guid(09899937793908b4ba2a2ef67291257d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f993f5926bcca0ae45617b0d6d5eefc8') in 0.159902 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 144.203688 seconds.
+  path: Assets/Animated Trees Package/Prefabs
+  artifactKey: Guid(449c339556b8d454eba508d652ca6871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated Trees Package/Prefabs using Guid(449c339556b8d454eba508d652ca6871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1dd6fdf0f4be54a0e8920ebd8640710') in 0.001054 seconds
+Number of updated asset objects reloaded before import = 1
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 7.264887 seconds.
+  path: Assets/StreamingAssets
+  artifactKey: Guid(9778e257cfa460243b774a244539e76e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StreamingAssets using Guid(9778e257cfa460243b774a244539e76e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad56a398a2bb099d7382c7e2156c64a1') in 0.000470 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 1.67 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 0 unused Assets / (0 B). Loaded Objects now: 3656.
+Memory consumption went from 139.3 MB to 139.3 MB.
+Total: 5.992498 ms (FindLiveObjects: 0.327355 ms CreateObjectMapping: 0.287195 ms MarkObjects: 5.361616 ms  DeleteObjects: 0.015064 ms)
+
+Prepare: number of updated asset objects reloaded= 1
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 490.059169 seconds.
+  path: Assets/Animated Trees Package/Prefabs/Animated/Acacias/Acacia 1.prefab
+  artifactKey: Guid(e2767e220c13e1b4c8bac529e19fefa0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated Trees Package/Prefabs/Animated/Acacias/Acacia 1.prefab using Guid(e2767e220c13e1b4c8bac529e19fefa0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7b7016d2b9f37e369179ab4413cb0dd') in 0.685964 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 139
+========================================================================
+Received Import Request.
+  Time since last request: 26.240370 seconds.
+  path: Assets/Animated Trees Package/Textures/acacia_bark_normal.png
+  artifactKey: Guid(09899937793908b4ba2a2ef67291257d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated Trees Package/Textures/acacia_bark_normal.png using Guid(09899937793908b4ba2a2ef67291257d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a057eb2aa10e0a4257c2cdaef648601c') in 0.018037 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 6.413080 seconds.
+  path: Assets/Animated Trees Package/Models/Acacias/acacia_1.controller
+  artifactKey: Guid(cb87a56e50d4d6d42acbc55993e637dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated Trees Package/Models/Acacias/acacia_1.controller using Guid(cb87a56e50d4d6d42acbc55993e637dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb1254ccaa509618f77fa9008e5b320d') in 0.003042 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
