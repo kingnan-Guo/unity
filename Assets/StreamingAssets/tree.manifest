@@ -1,15 +1,15 @@
 ManifestFileVersion: 0
-CRC: 3003262599
+CRC: 2181973863
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: dbb7c92f0c9216da2c8ca53b44051563
+    Hash: 6904595d047546817808b487aba9eece
   TypeTreeHash:
     serializedVersion: 2
     Hash: 2c34f985835c10620e4210428923e8e7
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: dbb7c92f0c9216da2c8ca53b44051563
+    Hash: 6904595d047546817808b487aba9eece
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -36,4 +36,4 @@ SerializeReferenceClassIdentifiers: []
 Assets:
 - Assets/Animated Trees Package/Prefabs/Animated/Acacias/Acacia 1.prefab
 Dependencies:
-- /Users/kingnan/Documents/github/unity/AssetBundles/WebGL/treemate
+- /Users/kingnan/Documents/github/unity/AssetBundles/StandaloneOSXUniversal/treemate

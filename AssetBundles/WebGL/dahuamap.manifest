@@ -1,22 +1,20 @@
 ManifestFileVersion: 0
-CRC: 1927298895
+CRC: 533129865
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: a767ec1446e5b6137c4cd8428c63d9cc
+    Hash: 0afaea3b5ec36653b08ebb428f0758cb
   TypeTreeHash:
     serializedVersion: 2
-    Hash: b11e142875b8716a40f9e7318fe9a1b3
+    Hash: a3c8e9364a60c76c5b1821efa7fc8a17
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: a767ec1446e5b6137c4cd8428c63d9cc
+    Hash: 0afaea3b5ec36653b08ebb428f0758cb
 HashAppended: 0
 ClassTypes:
 - Class: 1
   Script: {instanceID: 0}
 - Class: 4
-  Script: {instanceID: 0}
-- Class: 20
   Script: {instanceID: 0}
 - Class: 21
   Script: {instanceID: 0}
@@ -32,6 +30,6 @@ ClassTypes:
   Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers: []
 Assets:
-- Assets/dahuyuahqu.fbx
+- "Assets/\u6A21\u578B/dahuyuahqu.prefab"
 Dependencies:
 - /Users/kingnan/Documents/github/unity/AssetBundles/WebGL/dahuamapmate

@@ -1,22 +1,36 @@
 ManifestFileVersion: 0
-CRC: 2709986630
+CRC: 3299610521
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: d349a03e9ae68b0868f746628f35116f
+    Hash: bacbf31d1ff9db35be0891a293cc6c5a
   TypeTreeHash:
     serializedVersion: 2
-    Hash: b30fce1a9ad74efb72be6c308c56e365
+    Hash: 0cc301ea058b76369fb741e3aebe13aa
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: d349a03e9ae68b0868f746628f35116f
+    Hash: bacbf31d1ff9db35be0891a293cc6c5a
 HashAppended: 0
 ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 20
+  Script: {instanceID: 0}
 - Class: 21
+  Script: {instanceID: 0}
+- Class: 23
   Script: {instanceID: 0}
 - Class: 28
   Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
 - Class: 48
+  Script: {instanceID: 0}
+- Class: 64
   Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers: []
 Assets:
@@ -63,6 +77,7 @@ Assets:
 - "Assets/Materials/\u4E50\u6A59logo.mat"
 - Assets/textures/c.jpg
 - "Assets/Materials/\u73BB\u7483.001.mat"
+- Assets/dahuyuahqu.fbx
 - Assets/Materials/ck001.mat
 - Assets/Materials/patterned_brick_floor_diff_2k.mat
 - Assets/Materials/dimiancizhuan.mat
