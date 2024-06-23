@@ -8,7 +8,7 @@ public class getDeviceInfo
     public getDeviceInfo(){
         // MonoManager.getInstance().StartCoroutine(TestIEnumerator());
         EventCenterOptimize.getInstance().AddEventListener<GameObject>("mousePositionPhysics", (res) => {
-            Debug.Log("接收到的 楼层 222" + res.name);
+            Debug.Log("getDeviceInfo == " + res.name);
         });
 
     }

@@ -21,9 +21,14 @@ public class functionManagerInheritMono : MonoBehaviour
 
         mouseInputMgr.getInstance();
         
-        EventCenter.getInstance().AddEventListener("鼠标点击左键", (res) => {
-            Debug.Log("鼠标点击左键"+ res);
-        });
+        // EventCenter.getInstance().AddEventListener("鼠标点击左键", (res) => {
+        //     Debug.Log("鼠标点击左键"+ res);
+        // });
+
+        getGameObjectThroughMousePosition getGameObjectThroughMousePosition = new getGameObjectThroughMousePosition();
+        MonoManager.getInstance().AddUpdateListener(getGameObjectThroughMousePosition.Update);
+
+
     }
 
     // Update is called once per frame

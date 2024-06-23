@@ -8,6 +8,8 @@ public class loadABDemo : MonoBehaviour
     void Start()
     {
         GameObject obj = ABManager.GetInstance().LoadRes("dahuamap", "Assets/dahuyuahqu.fbx") as GameObject;
+
+        GameObject.Find("Camera").SetActive(false);
         // obj.transform.position = -Vector3.up;
 
         // object obj1 = ABManager.GetInstance().LoadRes("dahuamap", "Assets/dahuyuahqu 1.fbx", typeof(GameObject));

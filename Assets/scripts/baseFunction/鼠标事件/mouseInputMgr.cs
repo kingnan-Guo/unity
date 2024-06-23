@@ -41,6 +41,14 @@ public class mouseInputMgr : baseManager<mouseInputMgr>
         if(Input.GetMouseButton(0)){
             EventCenter.getInstance().EventTrigger("鼠标点击左键", Input.mousePosition);
         }
+
+        if(Input.GetMouseButton(1)){
+            EventCenter.getInstance().EventTrigger("鼠标点击右键", Input.mousePosition);
+        }
+
+
+
+        Debug.Log(" 鼠标位置 == "+ Input.mousePosition);
         // if(Input.GetKeyDown(keyCode)){
         //     Debug.Log("按下 = "+keyCode);
         //     EventCenter.getInstance().EventTrigger("KeyDown", keyCode);
