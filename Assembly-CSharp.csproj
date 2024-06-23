@@ -94,6 +94,7 @@
     <Compile Include="Assets/scripts/baseProject/缓存池模块优化/poolManagerOptimize.cs" />
     <Compile Include="Assets/scripts/baseProject/UI模块/panelFirst.cs" />
     <Compile Include="Assets/scripts/baseProject/事件中心/EventCenter.cs" />
+    <Compile Include="Assets/scripts/baseFunction/JSON管理器/jsonDataManager.cs" />
     <Compile Include="Assets/scripts/baseProject/单例/自动对象MonoBehaviour单例/SingletonAutoMonoDemo.cs" />
     <Compile Include="Assets/scripts/baseProject/资源加载模块/ResourcesManagerDemo.cs" />
     <Compile Include="Assets/scripts/baseProject/音效管理器/AudioMgr.cs" />
