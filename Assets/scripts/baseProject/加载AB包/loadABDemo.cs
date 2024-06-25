@@ -7,7 +7,7 @@ public class loadABDemo : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        GameObject obj = ABManager.GetInstance().LoadRes("dahuamap", "Assets/dahuyuahqu 1.fbx") as GameObject;
+        GameObject obj = ABManager.GetInstance().LoadRes("dahuamap", "Assets/dahuyuahqu.fbx") as GameObject;
 
         GameObject.Find("Camera").SetActive(false);
         // obj.transform.position = -Vector3.up;

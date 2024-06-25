@@ -21,12 +21,14 @@ public class canvasOfModelInfo
 
         EventCenterOptimize.getInstance().AddEventListener<GameObject>("mouseMovePositionPhysics", (res) => {
             
-            if(res != null){
+            if(res != null && res.transform.gameObject.tag == "device"){
+
+                
                 // Debug.Log("canvasOfModelInfo mouseMovePositionPhysics == " + res.name);
                 currentGameObject = res;
 
                 // currentGameObject 设置材质
-                currentGameObject.GetComponent<Renderer>().material = Resources.Load<Material>("Materials/test");
+                // currentGameObject.GetComponent<Renderer>().material = Resources.Load<Material>("Materials/test");
 
                 deviceInfo deviceInfo = deviceModel.getInstance().getDeviceInfo(res.name);
   
@@ -55,7 +57,7 @@ public class canvasOfModelInfo
                 //    GameObject.Instantiate(canvas);
                 }
 
-
+                
             } else {
                 // Debug.Log("mouseMovePositionPhysics == null");
                 GameObject.Destroy(canvas);
