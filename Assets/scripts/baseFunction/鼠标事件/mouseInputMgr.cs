@@ -48,7 +48,7 @@ public class mouseInputMgr : baseManager<mouseInputMgr>
 
 
 
-        Debug.Log(" 鼠标位置 == "+ Input.mousePosition);
+        // Debug.Log(" 鼠标位置 == "+ Input.mousePosition);
         // if(Input.GetKeyDown(keyCode)){
         //     Debug.Log("按下 = "+keyCode);
         //     EventCenter.getInstance().EventTrigger("KeyDown", keyCode);

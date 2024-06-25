@@ -29,6 +29,18 @@ public class functionManagerInheritMono : MonoBehaviour
         MonoManager.getInstance().AddUpdateListener(getGameObjectThroughMousePosition.Update);
 
 
+        // JsonDataManager jsonDataManager = new JsonDataManager();
+        // MonoManager.getInstance().AddUpdateListener(jsonDataManager.Update);
+
+        // JsonDataManagerDemo jsonDataManagerDemo = new JsonDataManagerDemo();
+        // MonoManager.getInstance().AddUpdateListener(jsonDataManagerDemo.Update);
+
+        
+
+        addModelToMap addModelToMap = new addModelToMap();
+        
+
+        JsonDataManagerDemo.getInstance();
     }
 
     // Update is called once per frame

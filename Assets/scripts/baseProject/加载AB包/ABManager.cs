@@ -34,7 +34,7 @@ public class ABManager : SingletonAutoMono<ABManager>
 #elif UNITY_ANDROID
             return "Android";
 #else
-            return "StandaloneOSXUniversal";
+            return "StandaloneWindows64";
 #endif
         }
     }
@@ -42,7 +42,7 @@ public class ABManager : SingletonAutoMono<ABManager>
     // AB 包方便修改  路径
     private string pathUrl{
         get{
-            return Application.streamingAssetsPath + "/StandaloneOSXUniversal/";
+            return Application.streamingAssetsPath + "/StandaloneWindows64/";
             // return "http://127.0.0.1:5500/AssetsBundles/StandaloneWindows64/";
         }
     }

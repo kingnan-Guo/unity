@@ -2,24 +2,24 @@
     "data": [{
         "deviceName": "设备1",
         "deviceId": 1,
-        "deviceType": "deviceType_1",
+        "deviceType": "deviceType83_40",
         "deviceStatus": "1",
         "imei": "123321123321123$1$1$1",
         "orgCode": "001001",
-        "orgName": "机构1",
+        "orgName": "Room.1022",
         "position":{
-            "x": 1,
-            "y": 1,
-            "z": 1
+            "x": 212.5846,
+            "y": 66.96217,
+            "z": 109
         }
     },{
         "deviceName": "设备2",
         "deviceId": 2,
-        "deviceType": "deviceType_2",
+        "deviceType": "deviceType83_40",
         "deviceStatus": "2",
         "imei": "123321123321123$2$2$2",
         "orgCode": "001002",
-        "orgName": "机构2",
+        "orgName": "Room.1022",
         "position":{
             "x": 2,
             "y": 2,
@@ -28,14 +28,14 @@
     }, {
         "deviceName": "设备3",
         "deviceId": 3,
-        "deviceType": "deviceType_1",
+        "deviceType": "deviceType83_40",
         "deviceStatus": "3",
         "imei": "123321123321123$3$3$3",
         "orgCode": "001003",
-        "orgName": "机构3",
+        "orgName": "Room.1022",
         "position":{
             "x": 3,
-            "y": 3,
+            "y": 2,
             "z": 3
         }
     }],

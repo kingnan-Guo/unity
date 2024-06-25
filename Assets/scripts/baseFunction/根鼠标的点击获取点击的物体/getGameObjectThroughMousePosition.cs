@@ -31,9 +31,9 @@ public class getGameObjectThroughMousePosition
                 // layerMask  忽略 一些
                 Debug.Log(hit.collider.name);
                 // Debug.Log(Vector3.forward );
-                Debug.Log(Time.deltaTime);
+                // Debug.Log(Time.deltaTime);
                 //点击后 把事件 发给 事件中心 
-                EventCenterOptimize.getInstance().EventTrigger<GameObject>("mousePositionPhysics", hit.transform.gameObject);
+                // EventCenterOptimize.getInstance().EventTrigger<GameObject>("mousePositionPhysics", hit.transform.gameObject);
             }
 
 
