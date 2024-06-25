@@ -8,7 +8,15 @@ public class canvasOfModelInfo
 
     private GameObject canvas;
     private GameObject currentGameObject;
+    private List<string> arr = new List<string>(){ "正常", "故障", "报警", "离线", "屏蔽"};
+
+    private Dictionary<string, string> typeDic = new Dictionary<string, string>();
+
+    
+
     public canvasOfModelInfo(){
+
+        typeDic.Add("deviceType83_40", "烟感探测器");
         //添加边框
 
         EventCenterOptimize.getInstance().AddEventListener<GameObject>("mouseMovePositionPhysics", (res) => {
@@ -32,10 +40,10 @@ public class canvasOfModelInfo
                     text.text = deviceInfo.deviceName;
 
                     text = GameObject.Find("deviceStatus").GetComponent<Text>();
-                    text.text = deviceInfo.deviceStatus;
+                    text.text = arr[int.Parse(deviceInfo.deviceStatus)];
 
                     text = GameObject.Find("deviceType").GetComponent<Text>();
-                    text.text = deviceInfo.deviceType;
+                    text.text = typeDic[deviceInfo.deviceType];
 
                     text = GameObject.Find("imei").GetComponent<Text>();
                     text.text = deviceInfo.imei;
