@@ -20,6 +20,7 @@ public class canvasOfModelInfo
                 // currentGameObject 设置材质
                 currentGameObject.GetComponent<Renderer>().material = Resources.Load<Material>("Materials/test");
 
+                deviceInfo deviceInfo = deviceModel.getInstance().getDeviceInfo(res.name);
   
                 if(canvas == null){
                     
@@ -28,14 +29,17 @@ public class canvasOfModelInfo
                     // 查找 canvas 下的text
                     Text text = GameObject.Find("deviceName").GetComponent<Text>();
                     // 设置 text 的文本
-                    text.text = res.name;
-                    // 设置 text 的层级
-                    text.transform.SetAsLastSibling();
-                    // 设置 text 的字体大小
-                    text.fontSize = 20;
-                    // 设置 text 的字体颜色
-                    text.color = Color.red;
-                    // 设置 text 的字体
+                    text.text = deviceInfo.deviceName;
+
+                    text = GameObject.Find("deviceStatus").GetComponent<Text>();
+                    text.text = deviceInfo.deviceStatus;
+
+                    text = GameObject.Find("deviceType").GetComponent<Text>();
+                    text.text = deviceInfo.deviceType;
+
+                    text = GameObject.Find("imei").GetComponent<Text>();
+                    text.text = deviceInfo.imei;
+                    Debug.Log("deviceInfo.imei = "+ deviceInfo.imei);
 
 
                 //    canvas.transform.forward = 
