@@ -121,6 +121,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/shader/Outline.shader" />
+    <None Include="Assets/shader/OutlineShader.shader" />
+    <None Include="Assets/shader/SelectedObject.shader" />
+    <None Include="Assets/shader/NewUnlitShader.shader" />
     <None Include="Assets/shader/NewSurfaceShader.shader" />
     <None Include="Assets/shader/WireframeShader.shader" />
   </ItemGroup>

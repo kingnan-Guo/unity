@@ -12,7 +12,7 @@ public class canvasOfModelInfo
 
     private Dictionary<string, string> typeDic = new Dictionary<string, string>();
 
-    
+    private float shake;
 
     public canvasOfModelInfo(){
 
@@ -21,6 +21,19 @@ public class canvasOfModelInfo
 
         EventCenterOptimize.getInstance().AddEventListener<GameObject>("mouseMovePositionPhysics", (res) => {
             
+
+
+              if(res != null){
+                currentGameObject = res;
+                // MaterialPropertyBlock propertyBlock = new MaterialPropertyBlock();
+                // res.GetComponent<Renderer>().GetPropertyBlock(propertyBlock);
+                // propertyBlock.SetColor("_Color", Color.blue);
+                // res.GetComponent<Renderer>().SetPropertyBlock(propertyBlock);
+            }
+
+
+
+
             if(res != null && res.transform.gameObject.tag == "device"){
 
                 
@@ -49,7 +62,7 @@ public class canvasOfModelInfo
 
                     text = GameObject.Find("imei").GetComponent<Text>();
                     text.text = deviceInfo.imei;
-                    Debug.Log("deviceInfo.imei = "+ deviceInfo.imei);
+                    // Debug.Log("deviceInfo.imei = "+ deviceInfo.imei);
 
 
                 //    canvas.transform.forward = 
@@ -66,6 +79,9 @@ public class canvasOfModelInfo
                 }
                 canvas = null;
             }
+
+
+
             // 给 gameObject 添加边框
             // res.AddComponent<MeshOutline>().OutlineColor = Color.red;
             // res.AddComponent<MeshOutline>().OutlineWidth = 10;
@@ -148,6 +164,21 @@ public class canvasOfModelInfo
             canvas.transform.LookAt(new Vector3(cameraTransform.position.x, canvas.transform.position.y, cameraTransform.position.z));
             canvas.transform.Rotate(0, 180, 0);
         }
+
+
+
+        if (shake >1)
+        {
+            // currentGameObject.GetComponent<MeshRenderer>().enabled=true;
+            Debug.Log(" 一秒 执行一次");
+            shake = 0;
+        }
+
+        shake += Time.deltaTime;
+    }
+
+    private void DelayRe() {
+        
     }
 
     public void OnDestroy(){

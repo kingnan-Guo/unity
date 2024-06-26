@@ -559,7 +559,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 805424973}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8f2b7467af273554a8263db4d42dec9f, type: 3}
   m_Name: 
@@ -769,7 +769,7 @@ GameObject:
   - component: {fileID: 1566726363}
   m_Layer: 0
   m_Name: 123321123321123$2$2$2
-  m_TagString: Untagged
+  m_TagString: device
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -830,7 +830,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 23e33e96b7df7b842b335d28c96aff12, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1036,7 +1036,7 @@ GameObject:
   - component: {fileID: 1951362912}
   m_Layer: 0
   m_Name: 123321123321123$1$1$1
-  m_TagString: Untagged
+  m_TagString: device
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
