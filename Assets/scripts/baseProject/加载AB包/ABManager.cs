@@ -40,12 +40,12 @@ public class ABManager : SingletonAutoMono<ABManager>
             return "StandaloneOSXUniversal";
 #elif UNITY_STANDALONE_LINUX
             return "Linux";
-#elif UNITY_WEBGL
-            return "WebGL";
-#elif UNITY_WSA
-            return "WSA";
-#elif UNITY_EDITOR
-            return "Editor";
+// #elif UNITY_WEBGL
+//             return "WebGL";
+// #elif UNITY_WSA
+//             return "WSA";
+// #elif UNITY_EDITOR
+//             return "Editor";
 #else
             return "StandaloneOSXUniversal";
 #endif
@@ -57,6 +57,8 @@ public class ABManager : SingletonAutoMono<ABManager>
         get{
             // return Application.streamingAssetsPath + "/StandaloneWindows64/";
             // return Application.streamingAssetsPath + "/" + mianABName + "/";
+
+            Debug.Log("mianABName =="+ mianABName);
 
             return Application.streamingAssetsPath + "/" + mianABName + "/";
             // return "http://127.0.0.1:5500/AssetsBundles/StandaloneWindows64/";

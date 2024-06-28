@@ -23,7 +23,7 @@ public class loadABDemo : MonoBehaviour
                 obj.transform.GetChild(i).tag ="building";
             }
         }
-        GameObject.Find("Camera").SetActive(false);
+        // GameObject.Find("Camera").SetActive(false); 
 
 
 

@@ -1,15 +1,15 @@
 ManifestFileVersion: 0
-CRC: 2181973863
+CRC: 3677314369
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 6904595d047546817808b487aba9eece
+    Hash: 04813d8b7039ec05ac3fa9759ad12c24
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 2c34f985835c10620e4210428923e8e7
+    Hash: dda261e9bafb09aaebdc01905952a468
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: 6904595d047546817808b487aba9eece
+    Hash: 04813d8b7039ec05ac3fa9759ad12c24
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -18,22 +18,16 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 21
   Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
 - Class: 43
   Script: {instanceID: 0}
-- Class: 64
-  Script: {instanceID: 0}
-- Class: 90
-  Script: {instanceID: 0}
-- Class: 91
-  Script: {instanceID: 0}
-- Class: 95
-  Script: {instanceID: 0}
-- Class: 137
-  Script: {instanceID: 0}
-- Class: 205
+- Class: 111
   Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers: []
 Assets:
-- Assets/Animated Trees Package/Prefabs/Animated/Acacias/Acacia 1.prefab
+- Assets/prefab/TreeSmall_Skinned.prefab
 Dependencies:
-- /Users/kingnan/Documents/github/unity/AssetBundles/StandaloneOSXUniversal/treemate
+- /Users/kingnan/Documents/github/unity/AssetBundles/StandaloneOSXUniversal/treematerials

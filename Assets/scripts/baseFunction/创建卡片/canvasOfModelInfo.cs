@@ -18,10 +18,21 @@ public class canvasOfModelInfo
 
     private Material material_back;
 
+    Transform currentFloor;
+
     public canvasOfModelInfo(){
 
         typeDic.Add("deviceType83_40", "烟感探测器");
         //添加边框
+
+        Material material = GameObject.Find("floor_19_e").GetComponent<Renderer>().material;
+
+        if(material_back == null){
+            material_back = new Material(material);
+        }
+                            
+
+
 
         if(mainCanvas == null){
             mainCanvas = createMianCanvasGameObject();
@@ -62,14 +73,15 @@ public class canvasOfModelInfo
               if(res != null){
 
 
-                if(currentGameObject == null ||  currentGameObject!=null && currentGameObject.name != res.name){
-                    if(currentGameObject !=null && currentGameObject.tag == "building"){
+                // if(currentGameObject == null ||  currentGameObject!=null && currentGameObject.name != res.name){
+                    if(currentFloor !=null && currentFloor.tag == "building"){
                         if(material_back != null){
-                            currentGameObject.GetComponent<Renderer>().material = material_back;
+                            // currentGameObject.GetComponent<Renderer>().material = material_back;
+                            currentFloor.gameObject.GetComponent<Renderer>().material = material_back;
                         }
                     }
                     currentGameObject = res;
-                }
+                // }
                 
                 // MaterialPropertyBlock propertyBlock = new MaterialPropertyBlock();
                 // res.GetComponent<Renderer>().GetPropertyBlock(propertyBlock);
@@ -127,39 +139,42 @@ public class canvasOfModelInfo
 
 
 
+                currentFloor = res.transform;
 
+                if(currentFloor != null) {
+                    // return ;
 
-                if(res.tag == "building"){
-                    // Debug.Log("currentParent =="+ res.name);
-                    Text text = mainCanvas.transform.Find("floorName").GetComponent<Text>();
-                            // 设置 text 的文本
-                    text.text =  "当前楼层" + res.name;
+                    // currentFloor = res.transform;
 
-
-                } else {
-
-                    Transform currentParent = res.transform.parent;
-
-                    
-
-                    if(currentParent != null){
+                    if(currentFloor != null){
                 
-                        while (currentParent != null && !currentParent.gameObject.CompareTag("building"))
+                        while (currentFloor != null && !currentFloor.gameObject.CompareTag("building"))
                         {
-                            currentParent =  currentParent.parent;
+                            currentFloor =  currentFloor.parent;
                         }
 
-                        Debug.Log("currentParent =="+ currentParent + "== ");
+                        Debug.Log("currentFloor =="+ currentFloor.name + "== ");
 
-                        if(currentParent != null &&currentParent.gameObject.CompareTag("building")){
+                        if(currentFloor != null &&currentFloor.gameObject.CompareTag("building")){
+                            
+                            Material material = currentFloor.gameObject.GetComponent<Renderer>().material;
+
                             Text text = mainCanvas.transform.Find("floorName").GetComponent<Text>();
                             // 设置 text 的文本
-                            text.text = "当前楼层" + currentParent.name;
+                            text.text = "当前楼层" + currentFloor.name;
 
-                            Debug.Log("currentParent == "+ currentParent.gameObject.name);
+                            if(material.color != Color.blue){
+                                material.color = Color.blue;
+                            }
+
+                            // Debug.Log("currentParent == "+ currentParent.gameObject.name);
                         } else {
                             Debug.Log("没有 悬浮在 任何一个建筑物上");        
-
+                            if(currentGameObject !=null && currentGameObject.tag == "building"){
+                                if(material_back != null){
+                                    currentGameObject.GetComponent<Renderer>().material = material_back;
+                                }
+                            }
                         }
                     } else{
                         Debug.Log("没有父级");
@@ -186,15 +201,6 @@ public class canvasOfModelInfo
                 
                 // Debug.Log("canvasOfModelInfo mouseMovePositionPhysics == " + res.name);
                 currentGameObject = res;
-
-                // 设置材质的颜色
-                // material.SetColor("_Color", Color.blue);
-
-                // 设置材质的颜色
-                // material.SetColor("_Color", Color.blue);
-
-                // 设置材质的颜色
-                // material.SetColor("_Color", Color.blue);
 
 
                 // currentGameObject 设置材质
