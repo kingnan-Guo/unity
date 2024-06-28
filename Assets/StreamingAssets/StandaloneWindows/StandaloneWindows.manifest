@@ -1,0 +1,11 @@
+ManifestFileVersion: 0
+CRC: 1101892951
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: dahuamap
+      Dependencies:
+        Dependency_0: dahuamapmate
+    Info_1:
+      Name: dahuamapmate
+      Dependencies: {}

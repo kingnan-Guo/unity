@@ -1,0 +1,11 @@
+ManifestFileVersion: 0
+CRC: 3332156509
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: dahuamappref
+      Dependencies:
+        Dependency_0: dahuamapmatepref
+    Info_1:
+      Name: dahuamapmatepref
+      Dependencies: {}
