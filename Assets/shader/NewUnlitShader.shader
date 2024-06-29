@@ -8,6 +8,7 @@ Shader "Unlit/NewUnlitShader"
     {
         Tags { "RenderType"="Opaque" }
         LOD 100
+        Blend DstColor SrcColor
 
         Pass
         {
