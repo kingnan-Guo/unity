@@ -19,7 +19,8 @@ Shader "Custom/myShaderTwo"
         LOD 200
         Cull Off
         // ZWrite Off
-        ZTest Greater
+        // ZTest Greater
+        Blend DstColor SrcColor
 
         CGPROGRAM
         // Physically based Standard lighting model, and enable shadows on all light types

@@ -237,6 +237,59 @@ Shader "TechShader/mytestShader"
         // 一般情况下， 我们只有在 实现一些特殊效果时才会修改深度测试方式， 比如透明物体 渲染会修改为 Less ，描边效果会 修改为Greate
 
         // ------ 混合方式 ----------
+        // 深度测试 ->> 混合 ->> 颜色缓冲区（存储屏幕中的 像素的颜色）
+        // 每次深度 测试 后 都会执行 混合
+        
+        // 混合就是 把当前的颜色 与 缓冲区 的颜色混合 计算，计算完成后 在存入到 颜色缓冲区（存储屏幕中的
+
+        // 最终留下来的 颜色 就是屏幕中 看到的颜色
+
+        // 设置 渲染图像的  混合的方式（多种颜色 叠加混合 比如透明、半透明和遮挡物体颜色混合）
+
+        // Blend One One       线性减淡
+        // Blend SrcAlpha OneMinusSrcAlpha 半透明 正常透明混合
+        // Blend SrcAlpha One OneMinusSrcAlpha 透明
+        // Blend SrcAlpha SrcAlpha 透明
+        // Blend OneMinusDstColor OneMinusDstColor 滤色
+        // Blend DstColor Zrero    正片叠加
+        // Blend DstColor SrcColor X光片效果
+        // Blend One OneMinusSrcAlpha 透明度混合
+        // ....
+        // 不设置的话 默认 不会进行混合
+
+        // 一般情况下 我们需要多种颜色  叠加渲染时 ，就需要设置混合方式，具体情况具体处理
+
+
+
+        // ----- 其他渲染状态 ------
+
+        // 1、LOD 控制LOD级别,  在不同 距离下使用不同的渲染方式处理； 如果加载 pass 上，不同的 渲染通道pass 使用 不同的 1、LOD
+        // 2、 ColorMask 设置颜色的通道写入蒙版，默认蒙版 为RGBA ; (遮照)
+        // 3、 ZClip 设置深度缓冲区 是否 进行裁剪，默认是 关闭的
+        // 4、 ZTest 深度测试 
+        // 5、 ZWrite 深度写入
+        // 6、 Cull 剔除方式
+        // 7、 Blend 混合方式
+        // 8、 ZOffset 深度偏移
+        // 9、 Offset 偏移
+        // 10、 Clip 裁剪
+        // 11、 ClipPlane 裁剪平面
+        // 12、 ClipThreshold 裁剪阈值
+        // 13、 ZTest  深度测试 
+
+
+        // ------- 渲染状态 注意事项 ----
+        以上这些状态不仅可以在subShader 语句块中声明
+        //之后 pass 渲染通道语句 块中 也可以神明这些 渲染状态
+        // 如果在subshader 语句块中适应会影响之后的 所有 渲染通道 pass
+        // 如果在pass 语句块中使用 只会影响当前 pass 渲染通道， 不会影响其他的pass
+
+      
+
+
+
+
+
         
 
         // 2、 渲染状态
