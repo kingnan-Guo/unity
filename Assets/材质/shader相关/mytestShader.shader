@@ -369,7 +369,7 @@ Shader "TechShader/mytestShader"
 
         }
 
-        FallBack "Diffuse"// 备用着色器； Diffuse 老版本 shader 的 名字
+        // FallBack "Diffuse"// 备用着色器； Diffuse 老版本 shader 的 名字
         // FallBack Off 没有  备用
         // 自定义的 要写 shader 的路径  和名字
         // 如果所有的 subshader 都无法执行 那么 这个物体就不会 被渲染出来
