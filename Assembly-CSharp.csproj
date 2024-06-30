@@ -124,10 +124,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/材质/shader相关/NewImageEffectShader.shader" />
+    <None Include="Assets/材质/shader相关/CG代码/CGTest.shader" />
     <None Include="Assets/材质/shader相关/myShaderTwo.shader" />
     <None Include="Assets/材质/shader相关/shader的形式/NewUnlitShader.shader" />
     <None Include="Assets/材质/备用着色器/NewUnlitShader.shader" />
     <None Include="Assets/材质/shader相关/NewSurfaceShader.shader" />
+    <None Include="Assets/材质/shader相关/CG代码/CGDataBaseType.shader" />
     <None Include="Assets/材质/shader相关/mytestShader.shader" />
   </ItemGroup>
   <ItemGroup>
