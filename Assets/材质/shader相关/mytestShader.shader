@@ -162,6 +162,8 @@ Shader "TechShader/mytestShader"
         // tags {"PreviewType" = "Skybox"}
 
 
+
+        // 2、 渲染状态
         /// 渲染状态 相关 ================
 
         // 片元 ： 在渲染管线中 片元市值在光栅化 阶段生成的 像素 挥着像素 片段
@@ -279,7 +281,7 @@ Shader "TechShader/mytestShader"
 
 
         // ------- 渲染状态 注意事项 ----
-        以上这些状态不仅可以在subShader 语句块中声明
+        // 以上这些状态不仅可以在subShader 语句块中声明
         //之后 pass 渲染通道语句 块中 也可以神明这些 渲染状态
         // 如果在subshader 语句块中适应会影响之后的 所有 渲染通道 pass
         // 如果在pass 语句块中使用 只会影响当前 pass 渲染通道， 不会影响其他的pass
@@ -288,16 +290,43 @@ Shader "TechShader/mytestShader"
 
 
 
-
+        
 
         
 
-        // 2、 渲染状态
+      
 
         // 3、 渲染通道
-        pass
+        pass    // 第一个渲染 通道
         {
-            // 第一个渲染 通道
+            // Name: "myTestShaderPassOne" // 其他shader 可以通过此名字 找到 此pass 进行复用
+            // usePass "Custom/myShaderTwo/PASSOME" // 复用其他shader 的 pass  会被自动转为 大写
+
+            // pass 中的渲染 标签
+            // Tags{"标签名称1“ = “标签值1” "标签名称2“ = “标签值2” }‘
+            // pass 中 有自己专门的渲染标签
+            // Tags {"LightMode = “标签值1” }‘// 主要作用 该 pass 应该在那个阶段执行
+            // 可以 将着色器 代码分配给当前的 巡查阶段 以实现所需的需的效果
+
+            // LightMode
+            // Always  // 始终渲染，不应用 光照
+            // ForwardBase  // 基础光照； 在向前渲染中 使用， 应用 环境光 主方向光 顶点/SH 光源 和光照贴纸
+            // ForwardAdd  // 基础光照 并 添加 光照；在向前渲染中 使用，应用附加的每像素光源（每个光源有一个通道）
+            // ShadowCaster  // 渲染阴影； 将对象深度渲染到 阴影贴图或 上年度纹理中
+            // MotionVectors  // 用于计算 每对象 运动 矢量
+            // prepassBase  // 基础渲染， 用于 预计算 阴影贴图； 在旧版延迟光照中使用，渲染法线 和镜面反射指数
+            // prepassFinal  // 基础渲染， 用于 预计算 阴影贴图； 在旧版延迟光照中使用 通过组合纹理 ， 光照和反光来渲染最终颜色
+            // vertex  // 顶点渲染；当 对象不进行光照 贴图时 在旧版顶点光照渲染中使用，应用所有 顶点 光源
+            // vertexLMRGB  // 顶点渲染 并 添加 光照； 当 对象不进行光照 贴图时 在旧版顶点光照渲染中使用，在光照贴图为RGBM 编码 的平台上（PC 和 游戏主机）
+            // vertexLM  // 顶点渲染 并 添加 光照； 当 对象不进行光照 贴图时 在旧版顶点光照渲染中使用，在光照图 为双 LDR 编码的 平台上 （移动平台）
+    
+
+
+
+
+
+            
+            
 
         }
         pass

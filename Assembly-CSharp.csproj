@@ -82,8 +82,8 @@
     <Compile Include="Assets/Scripts/pureMVC/PureNotification.cs" />
     <Compile Include="Assets/Scripts/baseProject/输入控制模块/InputMgr.cs" />
     <Compile Include="Assets/Scripts/baseProject/事件中心/EventCenter.cs" />
-    <Compile Include="Assets/Runtime/SkipSplash.cs" />
     <Compile Include="Assets/Scripts/baseProject/单例/MonoBehaviour单例基类/NewBehaviourScriptTest.cs" />
+    <Compile Include="Assets/Runtime/SkipSplash.cs" />
     <Compile Include="Assets/Scripts/MPV/Controller/MPV_controller.cs" />
     <Compile Include="Assets/Scripts/baseProject/加载AB包/loadABDemo.cs" />
     <Compile Include="Assets/Scripts/pureMVC/GameFacade.cs" />

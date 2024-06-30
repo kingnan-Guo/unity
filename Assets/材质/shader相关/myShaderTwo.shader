@@ -22,6 +22,12 @@ Shader "Custom/myShaderTwo"
         // ZTest Greater
         Blend DstColor SrcColor
 
+        pass
+        {
+            Name: "myShaderTwoPassOne"
+            
+        }
+
         CGPROGRAM
         // Physically based Standard lighting model, and enable shadows on all light types
         #pragma surface surf Standard fullforwardshadows
