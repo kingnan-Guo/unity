@@ -319,13 +319,47 @@ Shader "TechShader/mytestShader"
             // vertex  // 顶点渲染；当 对象不进行光照 贴图时 在旧版顶点光照渲染中使用，应用所有 顶点 光源
             // vertexLMRGB  // 顶点渲染 并 添加 光照； 当 对象不进行光照 贴图时 在旧版顶点光照渲染中使用，在光照贴图为RGBM 编码 的平台上（PC 和 游戏主机）
             // vertexLM  // 顶点渲染 并 添加 光照； 当 对象不进行光照 贴图时 在旧版顶点光照渲染中使用，在光照图 为双 LDR 编码的 平台上 （移动平台）
+             
     
+            //--------
+            // 用于指定当满足某些 条件 时 才渲染 pass
+            // Tags {"RequireOptions = 标签值 }
 
+            // 目前 unity 仅支持
+            // Tags {"RequireOptions = “softVegetation” }
+            // 仅当 Quality 窗口开启了 softVegetation 时才渲染此通道
 
+            // -------
+            // Tags {"PassFlags" = "标签值" }
+            // 主要作用： 一个渲染通道 pass 可指示 一些比哦啊值来更改渲染管线 向 pass 创书数据方式
 
-
+            // 目前 unity 仅支持
+            // Tags {"PassFlags“ = ”OnlyDirectional“ }
+            // 在 ForwardBase 向前渲染的通道类型中 使用， 此标志的作用时仅允许 主方向主方向 光和环境光 / 光照探针数据传递 到着色器
+            // 这意味着非重要 光源的数据 将不会传递到顶点光源 或 球谐函数 着色器变量
 
             
+            // ========== pass 中的 渲染 状态 =====================
+            // 如果 在 subshader 语句块中 使用会 影响之后的所有 渲染通道pass
+            // 如果 在 pass 语句块中 使用 只会影响当前的 渲染通道 pass
+            // 不仅如此 pass 中 还可以 使用固定管线着色器的 命令
+
+            
+            // ====== 其他着色器代码 =====
+            // 可能会使用 CG 或者 HLSL 等 着色器语言来进行偶寄书写
+
+
+            // ======= GrabPass 命令 =======
+            // 我们可以利用 GrabPass 命令吧即将绘制的屏幕内容抓取到纹理中
+            // 在后续听到中即可使用此纹理， 从而执行基于图像的高级效果
+
+            // eg：
+            // 将绘制该对枪之前的屏幕抓取到 _BackgroundTexture 中，
+            // GrabPass{
+            //     "_BackgroundTexture"
+            // }
+            // 注意该命令一般写在 某个pass 前， 之后的 pass 代码中可以利用 _BackgroundTexture 变量进行处理
+
             
 
         }
@@ -334,6 +368,12 @@ Shader "TechShader/mytestShader"
             // 第二个渲染 通道
 
         }
+
+        FallBack "Diffuse"// 备用着色器； Diffuse 老版本 shader 的 名字
+        // FallBack Off 没有  备用
+        // 自定义的 要写 shader 的路径  和名字
+        // 如果所有的 subshader 都无法执行 那么 这个物体就不会 被渲染出来
+
 
     }
 }

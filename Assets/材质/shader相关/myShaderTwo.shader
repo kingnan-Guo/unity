@@ -21,12 +21,14 @@ Shader "Custom/myShaderTwo"
         // ZWrite Off
         // ZTest Greater
         Blend DstColor SrcColor
+        // GrabPass{
+        //     "_BackgroundTexture"
+        // }
+        // pass
+        // {
+        //     Name: "PassOne" 
 
-        pass
-        {
-            Name: "myShaderTwoPassOne"
-            
-        }
+        // }
 
         CGPROGRAM
         // Physically based Standard lighting model, and enable shadows on all light types
