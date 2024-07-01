@@ -123,14 +123,19 @@
     <Compile Include="Assets/Scripts/摄像机/cameraPosition.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets/shader/shaderLab属性类型/shaderLabTest.shader" />
+    <None Include="Assets/shader/CG内置文件/CGFile.shader" />
+    <None Include="Assets/shader/顶点片元着色器/redball.shader" />
     <None Include="Assets/材质/shader相关/NewImageEffectShader.shader" />
-    <None Include="Assets/材质/shader相关/CG代码/CGTest.shader" />
     <None Include="Assets/材质/shader相关/myShaderTwo.shader" />
     <None Include="Assets/材质/shader相关/shader的形式/NewUnlitShader.shader" />
     <None Include="Assets/材质/备用着色器/NewUnlitShader.shader" />
     <None Include="Assets/材质/shader相关/NewSurfaceShader.shader" />
+    <None Include="Assets/shader/CG内置函数/CGInnerFunction.shader" />
+    <None Include="Assets/shader/redball.shader" />
     <None Include="Assets/材质/shader相关/CG代码/CGDataBaseType.shader" />
     <None Include="Assets/材质/shader相关/mytestShader.shader" />
+    <None Include="Assets/shader/传递多个参数/MultipleData.shader" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
