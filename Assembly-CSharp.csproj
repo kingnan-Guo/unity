@@ -70,6 +70,7 @@
     <None Include="Assets/resource/Materials/shader/shaderLab属性类型/shaderLabTest.shader" />
     <None Include="Assets/resource/Materials/shader/CG内置文件/CGFile.shader" />
     <None Include="Assets/resource/Materials/shader/顶点片元着色器/redball.shader" />
+    <None Include="Assets/resource/Materials/shader/逐顶点漫反射/vertexDiffuseReflection.shader" />
     <None Include="Assets/resource/Materials/shader/TEMP/myShaderTwo.shader" />
     <None Include="Assets/resource/Materials/shader/CG内置函数/CGInnerFunction.shader" />
     <None Include="Assets/resource/Materials/shader/着色器基础/redball.shader" />
