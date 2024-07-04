@@ -47,7 +47,7 @@ public class ABManager : SingletonAutoMono<ABManager>
 // #elif UNITY_EDITOR
 //             return "Editor";
 #else
-            return "StandaloneWindows";
+            return "StandaloneOSXUniversal";
 #endif
         }
     }
