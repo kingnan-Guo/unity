@@ -1,0 +1,51 @@
+ManifestFileVersion: 0
+CRC: 3061866485
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 88983f1137f5027e1e0950abec44e601
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9b123a21428b35207bf821852d57cf6f
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 88983f1137f5027e1e0950abec44e601
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 111
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/waibudaoru/Mesh/Materials/TreeTrunkTiled.mat
+- Assets/waibudaoru/Textures01/tree_s.tga
+- Assets/waibudaoru/Mesh/Materials/lambert1.mat
+- Assets/waibudaoru/Textures01/Plant_Bush_s.tga
+- Assets/waibudaoru/Materials/Plant_BushGrass.mat
+- Assets/waibudaoru/Textures01/Tree_Trunk_Tiled_d.tga
+- Assets/waibudaoru/Textures01/tree_d.tga
+- Assets/waibudaoru/Materials/Tree.mat
+- Assets/waibudaoru/Textures01/tree_n.tga
+- Assets/waibudaoru/Mesh/TreeLarge_Static.FBX
+- Assets/waibudaoru/Mesh/Materials/Tree.mat
+- Assets/waibudaoru/Textures01/Tree_Trunk_Tiled_n.tga
+- Assets/waibudaoru/Textures01/Plant_Bush_n.tga
+- Assets/waibudaoru/Materials/TreeTrunkTiled.mat
+- Assets/waibudaoru/Mesh/TreeSmall_Skinned.FBX
+- Assets/waibudaoru/Textures01/Plant_Bush_d.tga
+Dependencies: []

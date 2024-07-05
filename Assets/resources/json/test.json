@@ -1,0 +1,56 @@
+{
+    "data": [{
+        "deviceName": "设备1",
+        "deviceId": 1,
+        "deviceType": "deviceType83_40",
+        "deviceStatus": "5",
+        "imei": "123321123321123$1$1$1",
+        "orgCode": "001001",
+        "orgName": "floor_19_e",
+        "position":{
+            "x": 197,
+            "y": 66,
+            "z": 99
+        }
+    },{
+        "deviceName": "设备2",
+        "deviceId": 2,
+        "deviceType": "deviceType83_40",
+        "deviceStatus": "5",
+        "imei": "123321123321123$2$2$2",
+        "orgCode": "001002",
+        "orgName": "floor_19_e",
+        "position":{
+            "x": 197,
+            "y": 66,
+            "z": 100
+        }
+    }, {
+        "deviceName": "设备3",
+        "deviceId": 3,
+        "deviceType": "deviceType83_40",
+        "deviceStatus": "5",
+        "imei": "123321123321123$3$3$3",
+        "orgCode": "001003",
+        "orgName": "floor_19_e",
+        "position":{
+            "x": 197,
+            "y": 66,
+            "z": 101
+        }
+    }, {
+        "deviceName": "设备4",
+        "deviceId": 3,
+        "deviceType": "deviceType83_40",
+        "deviceStatus": "5",
+        "imei": "123321123321123$4$4$4",
+        "orgCode": "001003",
+        "orgName": "floor_18_e",
+        "position":{
+            "x": 197,
+            "y": 50,
+            "z": 101
+        }
+    }],
+    "code": 200
+}
