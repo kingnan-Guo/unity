@@ -3,6 +3,8 @@ Shader "Unlit/tangentSpaceNormalMapping"
     Properties
     {
         _MainTex("MainTex", 2D) = "white" {} // 纹理
+        _BumpMap("Normal Map", 2D) = "bump" {} // 法线贴图
+        _BumpScale("Bump Scale", Range(0, 1)) = 1// 法线贴图 影响度
         _Diffuse("Diffuse", Color) = (1, 1, 1, 1)
         _Specular("Specular", Color) = (1, 1, 1, 1)// 高光 
         _Gloss("Gloss", Range(1, 256)) = 1
@@ -25,6 +27,11 @@ Shader "Unlit/tangentSpaceNormalMapping"
             sampler2D _MainTex;// 纹理
             float4 _MainTex_ST;// 是 _MainTex 的附属物 ，包含纹理的缩放和偏移
 
+            // 法线贴图
+            sampler2D _BumpMap;// 法线贴图
+            float4 _BumpMap_ST;// 是 _BumpMap 的附属物 ，包含纹理的缩放和偏移
+            float _BumpScale;
+
             fixed4 _Diffuse;
             fixed4 _Specular;
             float _Gloss;
@@ -36,6 +43,8 @@ Shader "Unlit/tangentSpaceNormalMapping"
                 float3 worldPosition : TEXCOORD1;// 世界顶点位置
 
                 float2 uv : TEXCOORD2;//TEXCOORD2 语义:获取该模型纹理坐标 ； 用模型的 第三套 纹理坐标填充 TEXCOORD2
+
+                float2 normalUv : TEXCOORD3;// 法线贴图的 uv
             };
 
             v2f vert (appdata_base v)
@@ -52,6 +61,11 @@ Shader "Unlit/tangentSpaceNormalMapping"
                 // 替换上面
                 o.uv = TRANSFORM_TEX(v.texcoord, _MainTex);// 纹理坐标；也就是俗称的UV，是顶点数据的一部分； uv和有没有贴图没关系哦，uv是网格的属性
                 
+                // 法线贴图
+                o.normalUv = TRANSFORM_TEX(v.texcoord, _BumpMap);// 法线贴图的 uv
+
+                // 计算切线空间的 矩阵
+
                 return o;
             }
 
