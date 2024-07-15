@@ -1,4 +1,4 @@
-Shader "Unlit/tangentSpaceNormalMapping"
+Shader "Unlit/tangentSpaceNormalMappingHeight"
 {
     Properties
     {

@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: "\u7EB9\u7406\u91C7\u6837"
-  m_Shader: {fileID: 4800000, guid: be529be803a490c4582d377949510e9a, type: 3}
+  m_Name: "\u4E16\u754C\u7A7A\u95F4\u6CD5\u7EBF\u7EB9\u7406\u6620\u5C04"
+  m_Shader: {fileID: 4800000, guid: f84f11bad08d4ef489fce0295ac0de69, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -24,7 +24,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BumpMap:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 89be40496e8ad79479bbcf0e395734d9, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -65,7 +65,7 @@ Material:
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
-    - _Gloss: 41
+    - _Gloss: 43
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
