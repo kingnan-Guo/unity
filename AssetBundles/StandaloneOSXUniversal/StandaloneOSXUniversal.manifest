@@ -1,0 +1,26 @@
+ManifestFileVersion: 0
+CRC: 2364490872
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: dahuamap
+      Dependencies:
+        Dependency_0: dahuamapmaterials
+    Info_1:
+      Name: tree
+      Dependencies:
+        Dependency_0: treematerials
+    Info_2:
+      Name: dahuamapmaterials
+      Dependencies: {}
+    Info_3:
+      Name: terrain
+      Dependencies:
+        Dependency_0: dahuamapmaterials
+        Dependency_1: terrainmaterials
+    Info_4:
+      Name: terrainmaterials
+      Dependencies: {}
+    Info_5:
+      Name: treematerials
+      Dependencies: {}
