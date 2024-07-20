@@ -1,4 +1,4 @@
-Shader "Unlit/NewUnlitShader"
+Shader "Unlit/normalTextureMaterials"
 {
     Properties
     {
@@ -17,6 +17,7 @@ Shader "Unlit/NewUnlitShader"
             #pragma fragment frag
 
             #include "UnityCG.cginc"
+            #include "Lighting.cginc"// 包含光照计算函数
 
             struct v2f
             {
@@ -32,25 +33,34 @@ Shader "Unlit/NewUnlitShader"
             float4 _MainTex_ST;
             float4 _Diffuse;
 
-            v2f vert (appdata v)
+            v2f vert (appdata_base v)
             {
                 v2f o;
                 o.vertex = UnityObjectToClipPos(v.vertex);
-                float3 worldNormal = UnityObjectToWorldNormal(v.normalize);
+                float3 worldNormal = UnityObjectToWorldNormal(v.normal);
                 o.worldNormal = worldNormal;
-                o.worldPos = UnityObjectToWorldPos(v.vertex);
-                o.uv = TRANSFORM_TEX(v.uv, _MainTex);
+                o.worldPos = UnityObjectToWorldDir(v.vertex);
+                o.uv = TRANSFORM_TEX(v.texcoord, _MainTex);
                 // UNITY_TRANSFER_FOG(o,o.vertex);
                 return o;
             }
 
             fixed4 frag (v2f i) : SV_Target
             {
-                // sample the texture
-                fixed4 col = tex2D(_MainTex, i.uv);
-                // apply fog
-                UNITY_APPLY_FOG(i.fogCoord, col);
-                return col;
+                // 环境光源
+                fixed3 ambient =  UNITY_LIGHTMODEL_AMBIENT.xyz;
+
+                // 纹理 采样
+                fixed4 albedo = tex2D(_MainTex, i.uv);
+
+                // 漫反射
+                fixed3 worldLightDir = UnityObjectToWorldDir(i.worldPos); // 世界光源方向
+                float difLight = dot(worldLightDir, i.worldNormal) * 0.5 + 0.5;// 光源方向与法线 点积
+
+                fixed3 diffuse = _LightColor0.rgb * albedo * _Diffuse.rgb * difLight; 
+
+
+                return float4 (ambient + diffuse, 1);
             }
             ENDCG
         }
