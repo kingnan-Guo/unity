@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: "\u63CF\u8FB9\u8D34\u56FE\u6750\u8D28"
-  m_Shader: {fileID: 4800000, guid: 7f25b5c753b3a45bdad879495d6b96fe, type: 3}
+  m_Name: "\u88C1\u526A\u7A7A\u95F4\u6CD5\u7EBF\u5916\u62D3"
+  m_Shader: {fileID: 4800000, guid: e28c6397e14584f5e88cf6edc8551b61, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -71,7 +71,7 @@ Material:
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
-    - _OutLine: 0.01
+    - _OutLine: 0
     - _Parallax: 0.02
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1

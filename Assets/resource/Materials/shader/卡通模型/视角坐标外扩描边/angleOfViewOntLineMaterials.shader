@@ -1,4 +1,4 @@
-Shader "Unlit/outLineMaterials"
+Shader "Unlit/angleOfViewOntLineMaterials"
 {
     Properties
     {
@@ -35,8 +35,19 @@ Shader "Unlit/outLineMaterials"
             {
                 v2f o;
                 // 法线外移
-                v.vertex.xyz += v.normal * _OutLine;//物体坐标外拓 法线外扩；  为什么 是 乘 ？？？;
-                o.vertex = UnityObjectToClipPos(v.vertex);
+                // v.vertex.xyz += v.normal * _OutLine;//物体坐标外拓 法线外扩；  为什么 是 乘 ？？？;
+
+                // float4 pos = UnityObjectToViewPos(v.vertex); // 物体坐标转 视角坐标 4x4
+                float4 pos = mul(UNITY_MATRIX_V, mul(unity_ObjectToWorld, v.vertex));
+
+                // 物体法线转 视角法线
+                float3 normal = UnityObjectToWorldNormal(v.normal);// 1、物体法线 转 世界法线
+                float3 normal_view = normalize(mul((float3x3)UNITY_MATRIX_IT_MV, v.normal));// 2、世界法线转换  视角 法线; UNITY_MATERX_IT_MV 物体坐标 到 世界坐标
+                
+                pos = pos + float4(normal_view, 0) * _OutLine;
+                
+                // o.vertex = UnityViewToClipPos(pos);
+                o.vertex = mul(UNITY_MATRIX_P, pos);
                 return o;
             }
 

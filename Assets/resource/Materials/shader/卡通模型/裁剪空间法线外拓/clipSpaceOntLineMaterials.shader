@@ -1,4 +1,4 @@
-Shader "Unlit/outLineMaterials"
+Shader "Unlit/clipSpaceOntLineMaterials"
 {
     Properties
     {
@@ -35,8 +35,16 @@ Shader "Unlit/outLineMaterials"
             {
                 v2f o;
                 // 法线外移
-                v.vertex.xyz += v.normal * _OutLine;//物体坐标外拓 法线外扩；  为什么 是 乘 ？？？;
-                o.vertex = UnityObjectToClipPos(v.vertex);
+                o.vertex= UnityObjectToClipPos(v.vertex); //
+
+                // float3 normal = UnityObjectToWorldNormal(v.normal);
+                //  转到视角 坐标 下 z 值 就是 纯粹的 深度
+                float3 normal_view = normalize(mul((float3x3)UNITY_MATRIX_IT_MV, v.normal));// 2、世界法线转换  视角 法线; UNITY_MATERX_IT_MV 物体坐标 到 世界坐标
+                // 世界 视角空间 转换到 裁剪空间
+                float2 viewNormal = normalize(TransformViewToProjection(normal_view.xy));//
+                
+                o.vertex.xy += viewNormal * _OutLine;
+
                 return o;
             }
 
