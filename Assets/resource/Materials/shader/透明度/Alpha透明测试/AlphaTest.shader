@@ -18,6 +18,7 @@ Shader "Unlit/AlphaTest"
             // "Queue"="Transparent" // 渲染队列
         }
         LOD 100
+        Cull Off
         Pass
         {
             CGPROGRAM
