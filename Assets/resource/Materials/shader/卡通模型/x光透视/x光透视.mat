@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: "\u63CF\u8FB9\u8D34\u56FE\u6750\u8D28"
-  m_Shader: {fileID: 4800000, guid: 7f25b5c753b3a45bdad879495d6b96fe, type: 3}
+  m_Name: "x\u5149\u900F\u89C6"
+  m_Shader: {fileID: 4800000, guid: 22a39c916e7eb450ba0893b3e804fe07, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -59,6 +59,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _RampTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
     - _BumpScale: 1
@@ -71,16 +75,23 @@ Material:
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
-    - _OutLine: 0.01
+    - _OutLine: 0
     - _Parallax: 0.02
+    - _RimPower: 0.18
+    - _RimWidth: 0
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
+    - _Steps: 3
+    - _ToonEffect: 0
     - _UVSec: 0
+    - _XRayPower: 0.29
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Diffuse: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _OutLineColor: {r: 0, g: 0, b: 0, a: 1}
+    - _RimColor: {r: 0.9211932, g: 0.93333334, b: 0.13725486, a: 1}
+    - _XRayColor: {r: 0.07058822, g: 0.32405332, b: 0.972549, a: 0}
   m_BuildTextureStacks: []
