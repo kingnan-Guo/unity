@@ -49,6 +49,7 @@ Shader "Unlit/LightModeTest"
                 float4 vertex : SV_POSITION;
                 float3 worldNormal : TEXCOORD0;
                 float3 worldPos : TEXCOORD1;
+                float3 vertextLight : TEXCOORD2;// 顶点 光照 值
             };
 
 
@@ -61,11 +62,30 @@ Shader "Unlit/LightModeTest"
                 o.worldPos = mul(unity_ObjectToWorld, v.vertex).xyz;
 
 
-                // 在 LightMap 关闭情况下 才会进行 顶点 和 球谐函数 光照计算
+                // 在 LightMap 关闭情况下 才会进行 顶点 和 球谐函数 光照计算； lightmap 烘焙后 的光照贴图
                 #ifdef LIGHTMAP_OFF
-                //球谐函数 ShadeSH9——> UnityCG.cginc
+                //球谐函数 ShadeSH9 -> UnityCG.cginc
                 float3 shLight = ShadeSH9(float4(v.normal, 1.0));// shLight 球谐函数 计算具体光源的值
+                o.vertextLight = shLight;
 
+                    // 接下来 是 逐顶点 计算
+                    #ifdef VERTEXLIGHT_ON// 如果 顶点光源是 开的 情况下
+                    float3 vertexLight = Shade4PointLights(
+
+                        // 第一盏光的位置
+                        unity_4LightPosX0, unity_4LightPosY0, unity_4LightPosZ0,
+                        // 第 n 盏光的颜色, 最多 四盏
+                        unity_LightColor[0].rgb, unity_LightColor[1].rgb, unity_LightColor[2].rgb, unity_LightColor[3].rgb,
+                        // lightAttenSq 光照的 衰弱
+                        unity_4LightAtten0,
+                        // 
+                        o.worldPos, o.worldNormal
+
+                    ); // 逐顶点 光源 计算
+
+                    o.vertextLight += vertexLight;
+
+                    #endif
 
                 #endif
                 return o;
@@ -96,7 +116,7 @@ Shader "Unlit/LightModeTest"
                 // 高光 ; _LightColor0.rgb 方向 光 应该就是 平行光
                 fixed3 specular = _LightColor0.rgb * _Specular.rgb * pow(saturate(dot(worldNormal, halfDir)), _Gloss);
 
-                return fixed4(ambient + (diffuse + specular), 1.0);
+                return fixed4(ambient + (diffuse + specular) + i.vertextLight, 1.0);
             }
             ENDCG
         }
