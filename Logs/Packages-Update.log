@@ -40,3 +40,17 @@ The following packages were 已更新:
   com.unity.collab-proxy 从版本 1.13.5 到 2.3.1
   com.unity.timeline 从版本 1.6.2 到 1.7.6
   com.unity.visualscripting 从版本 1.7.6 到 1.9.4
+
+=== Sat Aug 31 09:57:59 2024
+
+Packages were changed.
+Update Mode: updateDependencies
+
+The following packages were 已添加:
+  com.unity.modules.accessibility@1.0.0
+The following packages were 已更新:
+  com.unity.feature.development 从版本 1.0.1 到 1.0.2
+  com.unity.timeline 从版本 1.7.6 到 1.8.6
+  com.unity.ugui 从版本 1.0.0 到 2.0.0
+The following packages were 已移除:
+  com.unity.textmeshpro@3.0.6
